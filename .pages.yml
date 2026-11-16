@@ -33,21 +33,47 @@ content:
 
   - name: progetti
     label: Progetti
-    type: file
-    path: _data/progetti.yml
-    list: true
+    type: collection
+    path: _progetti
+    filename: "{primary}.md"
+    view:
+      fields: [nome, fondo, ordine]
+      primary: nome
+      sort: [ordine]
     fields:
       - name: nome
         label: Nome del progetto
         type: string
         required: true
       - name: descrizione
-        label: Descrizione (una riga)
+        label: Descrizione (una riga, compare anche in home)
         type: string
         required: true
       - name: fondo
         label: Finanziamento (es. LIFE, PRIN, PNRR)
         type: string
+      - name: ordine
+        label: Posizione nella lista (1 = primo)
+        type: number
+        required: true
+      - name: periodo
+        label: Periodo (es. 2023–2028; vuoto per nasconderlo)
+        type: string
+      - name: codice
+        label: Codice del progetto (vuoto per nasconderlo)
+        type: string
+      - name: sito_ufficiale
+        label: Link al sito o alla scheda ufficiale (vuoto per nasconderlo)
+        type: string
+      - name: foto
+        label: Foto (orizzontale; vuota = foto della sezione Progetti)
+        type: image
+      - name: foto_alt
+        label: Cosa mostra la foto
+        type: string
+      - name: body
+        label: Testo della pagina del progetto
+        type: rich-text
 
   - name: temi
     label: Temi di ricerca

@@ -77,6 +77,10 @@
   #progetti .projects__band { height: 280px; }
   #progetti .projects__rows { margin-top: var(--s-6); }
   @media (max-width: 639px) { #progetti .projects__band { height: 200px; } }
+  #progetti .projects__rows li { position: relative; }
+  #progetti .projects__rows a { color: inherit; text-decoration: none; }
+  #progetti .projects__rows a::after { content: ""; position: absolute; inset: 0; }
+  #progetti .projects__rows li:hover .rows__name > a, #progetti .projects__rows a:focus-visible { text-decoration: underline; text-underline-offset: .2em; }
 </style>
 </head>
 <body>
@@ -204,17 +208,18 @@
       <div class="frame frame--photo projects__band">
         <img class="frame__img" src="{{ s.foto_progetti | relative_url }}" alt="{{ s.foto_progetti_alt }}" loading="lazy" decoding="async" data-source="stand-in" data-subject="progetti">
       </div>
-      {%- assign n = site.data.progetti | size -%}
+      {%- assign progetti = site.progetti | sort: "ordine" -%}
+      {%- assign n = progetti | size -%}
       {%- assign meta = n | plus: 1 | divided_by: 2 %}
       <div class="grid grid--top projects__rows">
         <ul class="rows span-6">
-          {%- for x in site.data.progetti limit: meta %}
-          <li><span class="rows__name">{{ x.nome }}<small>{{ x.descrizione }}</small></span><span class="rows__value">{{ x.fondo }}</span></li>
+          {%- for x in progetti limit: meta %}
+          <li><span class="rows__name"><a href="{{ x.url | relative_url }}">{{ x.nome }}</a><small>{{ x.descrizione }}</small></span><span class="rows__value">{{ x.fondo }}</span></li>
           {%- endfor %}
         </ul>
         <ul class="rows span-6 start-7">
-          {%- for x in site.data.progetti offset: meta %}
-          <li><span class="rows__name">{{ x.nome }}<small>{{ x.descrizione }}</small></span><span class="rows__value">{{ x.fondo }}</span></li>
+          {%- for x in progetti offset: meta %}
+          <li><span class="rows__name"><a href="{{ x.url | relative_url }}">{{ x.nome }}</a><small>{{ x.descrizione }}</small></span><span class="rows__value">{{ x.fondo }}</span></li>
           {%- endfor %}
         </ul>
       </div>
