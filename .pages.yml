@@ -1,0 +1,147 @@
+# Configurazione di Pages CMS (https://pagescms.org): i moduli per modificare il sito.
+# Ogni voce di "content" è un file di _data/ che la pagina legge.
+
+media:
+  input: assets/img
+  output: /assets/img
+  categories: [image]
+
+content:
+  - name: team
+    label: Team
+    type: file
+    path: _data/team.yml
+    list: true
+    fields:
+      - name: nome
+        label: Nome e cognome
+        type: string
+        required: true
+      - name: gruppo
+        label: Gruppo
+        type: select
+        required: true
+        options:
+          values: [Docenti e ricercatori, Telerilevamento e dottorato, Collaboratori]
+      - name: tema
+        label: Tema di ricerca (una riga)
+        type: string
+        required: true
+      - name: orcid
+        label: ORCID (solo il codice, es. 0000-0002-1234-5678)
+        type: string
+
+  - name: progetti
+    label: Progetti
+    type: file
+    path: _data/progetti.yml
+    list: true
+    fields:
+      - name: nome
+        label: Nome del progetto
+        type: string
+        required: true
+      - name: descrizione
+        label: Descrizione (una riga)
+        type: string
+        required: true
+      - name: fondo
+        label: Finanziamento (es. LIFE, PRIN, PNRR)
+        type: string
+
+  - name: temi
+    label: Temi di ricerca
+    type: file
+    path: _data/temi.yml
+    list: true
+    fields:
+      - name: titolo
+        label: Titolo
+        type: string
+        required: true
+      - name: testo
+        label: Testo (una o due frasi)
+        type: text
+        required: true
+      - name: foto
+        label: Foto
+        type: image
+        required: true
+      - name: alt
+        label: Cosa mostra la foto (per chi non vede)
+        type: string
+        required: true
+
+  - name: metodi
+    label: Metodi (i capitoli con le foto grandi)
+    type: file
+    path: _data/metodi.yml
+    list: true
+    fields:
+      - name: titolo
+        label: Titolo
+        type: string
+        required: true
+      - name: testo
+        label: Testo (una o due frasi)
+        type: text
+        required: true
+      - name: foto
+        label: Foto (orizzontale, larga almeno 1600 px)
+        type: image
+        required: true
+      - name: alt
+        label: Cosa mostra la foto
+        type: string
+        required: true
+
+  - name: strumenti
+    label: Strumenti del laboratorio
+    type: file
+    path: _data/strumenti.yml
+    list: true
+    fields:
+      - name: nome
+        label: Strumento
+        type: string
+        required: true
+      - name: descrizione
+        label: A cosa serve (una riga)
+        type: string
+
+  - name: sito
+    label: Testi e foto della home
+    type: file
+    path: _data/sito.yml
+    fields:
+      - { name: nome, label: Nome del laboratorio, type: string, required: true }
+      - { name: dipartimento, label: Riga sopra il titolo, type: string }
+      - { name: titolo, label: Titolo principale, type: string, required: true }
+      - { name: sottotitolo, label: Frase sotto il titolo, type: text }
+      - { name: email, label: Email di contatto, type: string, required: true }
+      - { name: indirizzo, label: Indirizzo (via e zona, senza numero civico), type: string }
+      - { name: foto_hero, label: Foto principale, type: image }
+      - { name: foto_hero_alt, label: Cosa mostra la foto principale, type: string }
+      - { name: evidenza_quando, label: In evidenza - quando, type: string }
+      - { name: evidenza_dove, label: In evidenza - dove, type: string }
+      - { name: evidenza_testo, label: In evidenza - testo (vuoto per nasconderlo), type: string }
+      - { name: metodi_titolo, label: Titolo della sezione Metodi, type: string }
+      - { name: metodi_testo, label: Testo della sezione Metodi, type: text }
+      - { name: temi_testo, label: Testo della sezione Temi, type: text }
+      - { name: team_testo, label: Testo della sezione Team, type: text }
+      - name: team_gruppi
+        label: Gruppi del team (nell'ordine in cui appaiono)
+        type: string
+        list: true
+      - { name: foto_team, label: Foto della sezione Team, type: image }
+      - { name: foto_team_alt, label: Cosa mostra la foto del Team, type: string }
+      - { name: laboratorio_testo, label: Testo della sezione Laboratorio, type: text }
+      - { name: foto_laboratorio, label: Foto del Laboratorio, type: image }
+      - { name: foto_laboratorio_alt, label: Cosa mostra la foto del Laboratorio, type: string }
+      - { name: progetti_testo, label: Testo della sezione Progetti, type: text }
+      - { name: foto_progetti, label: Foto della sezione Progetti, type: image }
+      - { name: foto_progetti_alt, label: Cosa mostra la foto dei Progetti, type: string }
+      - { name: contatti_titolo, label: Titolo dei contatti, type: string }
+      - { name: contatti_testo, label: Testo dei contatti, type: text }
+      - { name: foto_contatti, label: Foto dei contatti, type: image }
+      - { name: foto_contatti_alt, label: Cosa mostra la foto dei contatti, type: string }

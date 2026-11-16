@@ -1,0 +1,16 @@
+- titolo: Il carotaggio in campo
+  testo: Con la trivella di Pressler preleviamo una carota di legno a 1,30 m da terra, senza abbattere l’albero.
+  foto: /assets/img/photo-f2761888-960.webp
+  alt: Una trivella di Pressler appoggiata su un tronco a terra, con le cannucce per conservare le carote
+- titolo: Gli anelli, uno per anno
+  testo: In laboratorio la carota viene levigata e misurata. Ogni anello è un anno di crescita, datato e confrontato con il clima.
+  foto: /assets/img/photo-f1442074.webp
+  alt: Una carota di legno appena estratta, tenuta sul palmo accanto alla trivella
+- titolo: Il volo con LiDAR e multispettrale
+  testo: Il drone rileva il bosco in nuvole di punti 3D, con altezza delle chiome, rinnovazione e microtopografia.
+  foto: /assets/img/photo-f150973498-1600.webp
+  alt: Chiome di un bosco viste dall’alto da un drone, attraversate da una strada
+- titolo: Modelli e mappe
+  testo: Serie Landsat e Sentinel-2 e machine learning portano le misure dal singolo albero alle Alpi e all’Appennino.
+  foto: /assets/img/photo-f78660858-1600.webp
+  alt: Un bosco misto in autunno attorno a un lago, visto dall’alto

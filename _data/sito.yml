@@ -1,0 +1,32 @@
+# Testi generali della home
+nome: ForEcoLab
+dipartimento: Dipartimento D3A, Università Politecnica delle Marche
+titolo: Laboratorio di ecologia forestale ad Ancona
+sottotitolo: Leggiamo gli anelli degli alberi e rileviamo i boschi con droni LiDAR e satelliti, per capire come le foreste di montagna rispondono a gelate, siccità e incendi.
+email: forecolab@univpm.example
+indirizzo: Via Brecce Bianche, Monte Dago, Ancona
+foto_hero: /assets/img/photo-f83884075-2000.webp
+foto_hero_alt: Sezione di un tronco con decine di anelli di crescita concentrici, dal midollo alla corteccia
+evidenza_quando: Settembre 2026
+evidenza_dove: Sassari
+evidenza_testo: 4 contributi del gruppo al XV Congresso SISEF
+metodi_titolo: Metodi di campo e di laboratorio
+metodi_testo: Lo stesso bosco studiato da due lati, dentro il legno anno per anno e dall’alto albero per albero.
+temi_testo: Quattro domande su cui lavoriamo oggi, ognuna con un sito di studio vero.
+team_testo: Dodici persone tra docenti, ricercatori, dottorandi e collaboratori dell’Area Sistemi Forestali.
+team_gruppi:
+  - Docenti e ricercatori
+  - Telerilevamento e dottorato
+  - Collaboratori
+foto_team: /assets/img/photo-f81721432-960.webp
+foto_team_alt: Un faggio secolare dai rami larghi in una faggeta dell’Appennino centrale
+laboratorio_testo: Il ForEcoLab ha due banchi, uno per il legno e uno per i dati da drone e da satellite.
+foto_laboratorio: /assets/img/photo-f195387881-1200.webp
+foto_laboratorio_alt: Sezione sottile di legno al microscopio, con vasi e raggi colorati in rosso
+progetti_testo: Finanziati da Unione Europea, ministeri, Regione Marche e agenzie canadesi.
+foto_progetti: /assets/img/photo-f79437814.webp
+foto_progetti_alt: I versanti boscati del Monte Catria visti dal Monte Cucco
+contatti_titolo: Tesi, tirocini e collaborazioni
+contatti_testo: Per una tesi triennale o magistrale, un dottorato o un progetto comune.
+foto_contatti: /assets/img/photo-f5036509-960.webp
+foto_contatti_alt: Il margine di una faggeta in autunno sopra un prato di montagna

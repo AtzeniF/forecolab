@@ -1,0 +1,9 @@
+title: ForEcoLab
+lang: it
+url: https://atzenif.github.io
+baseurl: /forecolab
+# GitHub Pages compila il sito con Jekyll. I testi stanno in _data/, le foto in assets/img/.
+exclude:
+  - team.md
+  - shots
+  - README.md
