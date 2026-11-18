@@ -30,3 +30,15 @@ contatti_titolo: Tesi, tirocini e collaborazioni
 contatti_testo: Per una tesi triennale o magistrale, un dottorato o un progetto comune.
 foto_contatti: /assets/img/photo-f5036509-960.webp
 foto_contatti_alt: Il margine di una faggeta in autunno sopra un prato di montagna
+# Versione 1.0: titolo accanto al logo e foto dell'apertura, che si alternano da sole
+hero_sopratitolo: Università Politecnica delle Marche, Ancona
+hero_titolo: Forest Ecology Laboratory
+hero_foto:
+  - foto: /assets/img/hero-conero.webp
+    alt: Il promontorio del Conero coperto di bosco sopra il mare, visto da Sirolo
+  - foto: /assets/img/hero-cardeto.webp
+    alt: Il Parco del Cardeto ad Ancona, con prati, alberi e la falesia sul mare
+  - foto: /assets/img/hero-faggio.webp
+    alt: Un faggio secolare dai rami larghi in una faggeta dell’Appennino
+  - foto: /assets/img/hero-catria.webp
+    alt: I versanti boscati del Monte Catria, nell’Appennino umbro-marchigiano

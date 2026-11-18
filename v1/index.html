@@ -10,7 +10,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>{{ s.nome }}: laboratorio forestale ad Ancona</title>
+<title>Forecolab: Forest Ecology Laboratory, UNIVPM Ancona</title>
 <meta name="description" content="Anelli degli alberi, droni LiDAR e satelliti per studiare le foreste di montagna. Università Politecnica delle Marche.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ s.nome }}: laboratorio forestale ad Ancona">
@@ -60,6 +60,20 @@
   .footer__logo { display: block; width: 132px; }
   .footer__logo img { display: block; width: 100%; height: auto; }
   @media (max-width: 639px) { .nav__logo--img .logo-albero { height: 32px; } .nav__logo--img .logo-scritta { height: 16px; } }
+  /* apertura: logo accanto al titolo, foto che si alternano */
+  .hero__brand { display: grid; grid-template-columns: auto 1fr; gap: var(--s-5); align-items: center; margin-bottom: var(--s-5); }
+  .hero__logo { display: block; height: clamp(120px, 12vw, 176px); width: auto; }
+  .hero--slides h1 { font-size: clamp(40px, 4.2vw, 64px); line-height: 1.02; max-width: 11ch; margin: 0; }
+  .hero__brand .hero__kicker { margin: 0 0 var(--s-3); font-size: var(--t-small); color: var(--muted); }
+  .hero--slides > .hero__slide { opacity: 0; transition: opacity 1.6s ease; }
+  .hero--slides > .hero__slide.is-on { opacity: 1; }
+  .hero__pause { position: absolute; z-index: 2; right: max(var(--gut), 16px); bottom: 24px; width: 44px; height: 44px; border-radius: 999px; border: 0; display: grid; place-items: center; background: var(--p-bg); color: var(--p-ink); cursor: pointer; }
+  .hero__pause .i-play, .hero__pause[aria-pressed="true"] .i-pause { display: none; }
+  .hero__pause[aria-pressed="true"] .i-play { display: inline; }
+  .hero__pause svg { fill: currentColor; }
+  @media (max-width: 1023px) { .hero__pause { top: calc(var(--nav) + var(--photo) - 56px); bottom: auto; } }
+  @media (max-width: 639px) { .hero__logo { height: 96px; } }
+  @media (prefers-reduced-motion: reduce) { .hero--slides > .hero__slide { transition: none; } .hero__pause { display: none; } }
   /* ricerca: due linee */
   .line__pic { margin: 0 0 var(--s-5); border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 16 / 10; }
   .line__pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -129,15 +143,24 @@
 </header>
 
 <main id="top">
-  <section class="hero hero--photo" data-enter data-calm="left" aria-labelledby="hero-h">
-    <img class="hero__bg" src="{{ '/assets/img/photo-f79437814-2400.webp' | relative_url }}" srcset="{{ '/assets/img/photo-f79437814-1200.webp' | relative_url }} 1200w, {{ '/assets/img/photo-f79437814-2400.webp' | relative_url }} 2400w" sizes="(max-width: 639px) 300vw, 100vw" width="2400" height="1601" alt="I versanti boscati del Monte Catria, nell’Appennino umbro-marchigiano, sotto un cielo nuvoloso" style="--ly-pos: 60% 50%; --ly-pos-phone: 70% 50%" fetchpriority="high" data-source="stand-in" data-subject="Monte Catria">
+  <section class="hero hero--photo hero--slides" data-enter data-calm="left" aria-labelledby="hero-h">
+    {%- for f in s.hero_foto %}
+    <img class="hero__bg hero__slide{% if forloop.first %} is-on{% endif %}" src="{{ f.foto | relative_url }}" alt="{{ f.alt }}"{% if forloop.first %} fetchpriority="high"{% endif %} decoding="async" data-source="stand-in" data-subject="apertura">
+    {%- endfor %}
     <div class="wrap"><div class="hero-text">
       <div class="hero__text">
-        <h1 id="hero-h">Laboratorio forestale ad Ancona</h1>
-        <p class="hero__lead">Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste di montagna rispondono a gelate, siccità, vento e incendi.</p>
+        <div class="hero__brand">
+          <img class="hero__logo" src="{{ '/assets/logo/logo-for-eco-lab.svg' | relative_url }}" alt="Forecolab" width="2283" height="2642">
+          <div>
+            <p class="hero__kicker">{{ s.hero_sopratitolo }}</p>
+            <h1 id="hero-h">{{ s.hero_titolo }}</h1>
+          </div>
+        </div>
+        <p class="hero__lead">Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste rispondono a gelate, siccità, vento e incendi, dall’Appennino al verde di Ancona.</p>
         <div class="btn-row"><a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio{{ arrow }}</a><a class="btn btn--secondary" href="#temi">Vedi i temi di ricerca</a></div>
       </div>
     </div></div>
+    <button class="hero__pause" type="button" aria-pressed="false" aria-label="Ferma il cambio delle foto"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path class="i-pause" d="M4.5 3h2.5v10H4.5zM9 3h2.5v10H9z"/><path class="i-play" d="M5 3l8 5-8 5z"/></svg></button>
   </section>
 
   <section class="section statement" id="statement" data-moment="word-highlight" aria-label="Il laboratorio in breve">
@@ -264,6 +287,24 @@
   <a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio</a>
 </nav>
 
+<script>
+/* apertura: una foto nuova ogni 6 secondi, ferma col pulsante, ferma se si preferisce meno movimento */
+(() => {
+  const hero = document.querySelector('.hero--slides'); if (!hero) return;
+  const slides = [...hero.querySelectorAll('.hero__slide')], btn = hero.querySelector('.hero__pause');
+  if (slides.length < 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) { btn.hidden = true; return; }
+  let i = 0, paused = false;
+  setInterval(() => {
+    const next = slides[(i + 1) % slides.length];
+    if (paused || document.hidden || !next.complete || !next.naturalWidth) return;
+    slides[i].classList.remove('is-on'); i = (i + 1) % slides.length; slides[i].classList.add('is-on');
+  }, 6000);
+  btn.addEventListener('click', () => {
+    paused = !paused; btn.setAttribute('aria-pressed', paused);
+    btn.setAttribute('aria-label', paused ? 'Riprendi il cambio delle foto' : 'Ferma il cambio delle foto');
+  });
+})();
+</script>
 <script type="module" src="{{ '/assets/system.js' | relative_url }}"></script>
 <script type="module" src="{{ '/assets/motion/motion.js' | relative_url }}"></script>
 <script type="module" src="{{ '/assets/layout/layout.js' | relative_url }}"></script>

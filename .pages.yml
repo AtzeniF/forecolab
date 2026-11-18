@@ -143,6 +143,15 @@ content:
       - { name: nome, label: Nome del laboratorio, type: string, required: true }
       - { name: dipartimento, label: Riga sopra il titolo, type: string }
       - { name: titolo, label: Titolo principale, type: string, required: true }
+      - { name: hero_sopratitolo, label: "Versione 1.0 - riga sopra il titolo", type: string }
+      - { name: hero_titolo, label: "Versione 1.0 - titolo accanto al logo", type: string }
+      - name: hero_foto
+        label: "Versione 1.0 - foto dell'apertura (si alternano da sole, larghe almeno 1920 px)"
+        type: object
+        list: true
+        fields:
+          - { name: foto, label: Foto, type: image, required: true }
+          - { name: alt, label: Cosa mostra la foto, type: string, required: true }
       - { name: sottotitolo, label: Frase sotto il titolo, type: text }
       - { name: email, label: Email di contatto, type: string, required: true }
       - { name: indirizzo, label: Indirizzo (via e zona, senza numero civico), type: string }
