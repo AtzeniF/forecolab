@@ -67,13 +67,8 @@
   .hero__brand .hero__kicker { margin: 0 0 var(--s-3); font-size: var(--t-small); color: var(--muted); }
   .hero--slides > .hero__slide { opacity: 0; transition: opacity 1.6s ease; }
   .hero--slides > .hero__slide.is-on { opacity: 1; }
-  .hero__pause { position: absolute; z-index: 2; right: max(var(--gut), 16px); bottom: 24px; width: 44px; height: 44px; border-radius: 999px; border: 0; display: grid; place-items: center; background: var(--p-bg); color: var(--p-ink); cursor: pointer; }
-  .hero__pause .i-play, .hero__pause[aria-pressed="true"] .i-pause { display: none; }
-  .hero__pause[aria-pressed="true"] .i-play { display: inline; }
-  .hero__pause svg { fill: currentColor; }
-  @media (max-width: 1023px) { .hero__pause { top: calc(var(--nav) + var(--photo) - 56px); bottom: auto; } }
   @media (max-width: 639px) { .hero__logo { height: 96px; } }
-  @media (prefers-reduced-motion: reduce) { .hero--slides > .hero__slide { transition: none; } .hero__pause { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .hero--slides > .hero__slide { transition: none; } }
   /* ricerca: due linee */
   .line__pic { margin: 0 0 var(--s-5); border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 16 / 10; }
   .line__pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -156,11 +151,10 @@
             <h1 id="hero-h">{{ s.hero_titolo }}</h1>
           </div>
         </div>
-        <p class="hero__lead">Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste rispondono a gelate, siccità, vento e incendi, dall’Appennino al verde di Ancona.</p>
+        <p class="hero__lead">Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste di montagna rispondono a gelate, siccità, vento e incendi.</p>
         <div class="btn-row"><a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio{{ arrow }}</a><a class="btn btn--secondary" href="#temi">Vedi i temi di ricerca</a></div>
       </div>
     </div></div>
-    <button class="hero__pause" type="button" aria-pressed="false" aria-label="Ferma il cambio delle foto"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path class="i-pause" d="M4.5 3h2.5v10H4.5zM9 3h2.5v10H9z"/><path class="i-play" d="M5 3l8 5-8 5z"/></svg></button>
   </section>
 
   <section class="section statement" id="statement" data-moment="word-highlight" aria-label="Il laboratorio in breve">
@@ -288,21 +282,17 @@
 </nav>
 
 <script>
-/* apertura: una foto nuova ogni 6 secondi, ferma col pulsante, ferma se si preferisce meno movimento */
+/* apertura: una foto nuova ogni 6 secondi; ferma se il dispositivo chiede meno movimento */
 (() => {
   const hero = document.querySelector('.hero--slides'); if (!hero) return;
-  const slides = [...hero.querySelectorAll('.hero__slide')], btn = hero.querySelector('.hero__pause');
-  if (slides.length < 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) { btn.hidden = true; return; }
-  let i = 0, paused = false;
+  const slides = [...hero.querySelectorAll('.hero__slide')];
+  if (slides.length < 2 || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let i = 0;
   setInterval(() => {
     const next = slides[(i + 1) % slides.length];
-    if (paused || document.hidden || !next.complete || !next.naturalWidth) return;
+    if (document.hidden || !next.complete || !next.naturalWidth) return;
     slides[i].classList.remove('is-on'); i = (i + 1) % slides.length; slides[i].classList.add('is-on');
   }, 6000);
-  btn.addEventListener('click', () => {
-    paused = !paused; btn.setAttribute('aria-pressed', paused);
-    btn.setAttribute('aria-label', paused ? 'Riprendi il cambio delle foto' : 'Ferma il cambio delle foto');
-  });
 })();
 </script>
 <script type="module" src="{{ '/assets/system.js' | relative_url }}"></script>
