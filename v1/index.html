@@ -17,7 +17,7 @@
 <meta property="og:description" content="Anelli degli alberi, droni LiDAR e satelliti per le foreste di montagna.">
 <meta property="og:image" content="{{ '/v1/share.jpg' | relative_url }}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="{{ '/v1/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/assets/logo/logo-albero.svg' | relative_url }}" type="image/svg+xml">
 <meta name="theme-color" content="#faf9f6">
 <meta name="site-kind" content="other">
 <meta name="page-type" content="service">
@@ -53,6 +53,13 @@
 <!-- page CSS -->
 <style>
   .rows__name small { display: block; margin-top: var(--s-1); color: var(--muted); font-size: var(--t-body); font-weight: 400; line-height: 1.5; }
+  /* logo */
+  .nav__logo--img { gap: 10px; }
+  .nav__logo--img .logo-albero { height: 38px; }
+  .nav__logo--img .logo-scritta { height: 19px; }
+  .footer__logo { display: block; width: 132px; }
+  .footer__logo img { display: block; width: 100%; height: auto; }
+  @media (max-width: 639px) { .nav__logo--img .logo-albero { height: 32px; } .nav__logo--img .logo-scritta { height: 16px; } }
   /* ricerca: due linee */
   .line__pic { margin: 0 0 var(--s-5); border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 16 / 10; }
   .line__pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -97,14 +104,14 @@
 </head>
 <body>
 <!-- type: service (versione 1.0)
-     deal: hero photo, nav nav-centre, close close-photo, footer footer-columns, rhythm dark-band (ricerca), buttons block, mark arc, grounds none
+     deal: hero photo, nav nav-centre, close close-photo, footer footer-columns, rhythm dark-band (ricerca), buttons block, mark: the client's logo (traced from the logo board), grounds none
      palette: the client's own (logo board: #FAF9F6, #0B0B04, #958E59, #C3BBB5) via start.mjs brand, type outfit (geometric like the logo wordmark)
      moments: word-highlight in #statement, picture-develops in #laboratorio -->
 
 <header class="nav nav--centre">
   <div class="wrap nav__bar">
     <a class="skip-link" href="#top">Vai al contenuto</a>
-    <a class="nav__logo" href="#top"><span class="mark" data-mark="arc" aria-hidden="true"></span>{{ s.nome }}</a>
+    <a class="nav__logo nav__logo--img" href="#top" aria-label="{{ s.nome }}, torna su"><img class="logo-albero" src="{{ '/assets/logo/logo-albero.svg' | relative_url }}" alt=""><img class="logo-scritta" src="{{ '/assets/logo/logo-scritta.svg' | relative_url }}" alt="Forecolab"></a>
     <nav class="nav__links" aria-label="Principale">
       <div class="nav__item"><a class="nav__link" href="#ricerca">Ricerca</a></div>
       <div class="nav__item"><a class="nav__link" href="#temi">Temi</a></div>
@@ -236,7 +243,7 @@
     <div class="closing__links">
       <div class="grid">
         <div class="span-4 stack-4">
-          <a class="nav__logo" href="#top"><span class="mark" data-mark="arc" aria-hidden="true"></span>{{ s.nome }}</a>
+          <a class="footer__logo" href="#top" aria-label="{{ s.nome }}, torna su"><img src="{{ '/assets/logo/logo-for-eco-lab.svg' | relative_url }}" alt="Forecolab" width="2283" height="2642"></a>
           <p class="footer__lede">Forest Ecology and Tree-Ring Laboratory, Area Sistemi Forestali del D3A. {{ s.indirizzo }}.</p>
         </div>
         <div class="span-2 footer__col"><h3>Ricerca</h3><ul><li><a href="#ricerca">Linee</a></li><li><a href="#temi">Temi</a></li></ul></div>
