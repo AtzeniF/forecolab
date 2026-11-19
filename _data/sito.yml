@@ -36,8 +36,12 @@ hero_titolo: Forest Ecology Laboratory
 hero_foto:
   - foto: /assets/img/lab-faggete.webp
     alt: Faggete in autunno e prati d’altura sul crinale, con una strada che sale verso le antenne della vetta
+  - foto: /assets/img/lab-sanvicino.webp
+    alt: Il Monte San Vicino con i versanti di faggeta in autunno, visto da Poggio San Vicino
   - foto: /assets/img/lab-appennino.webp
     alt: Versanti dell’Appennino interamente coperti di bosco sopra un paese, sotto un cielo con nuvole sparse
+  - foto: /assets/img/lab-conero.webp
+    alt: Il versante boscato del Monte Conero che scende verso il mare, visto da Portonovo
   - foto: /assets/img/lab-valle.webp
     alt: Una valle stretta tra versanti boscati, con il bosco fitto in primo piano
   - foto: /assets/img/lab-crinale.webp
