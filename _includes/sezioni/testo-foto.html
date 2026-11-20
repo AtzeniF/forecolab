@@ -1,0 +1,12 @@
+{%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
+  <section class="section{% if sez.fondo == 'scuro' %} ground-inverse{% endif %}" id="{{ sez.id }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
+    <div class="wrap">
+      <div class="grid grid--top">
+        <div class="span-6 tf__text">
+          <h2 id="{{ sez.id }}-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h2>
+          <div class="tf__body" data-edit="{{ p }}.testo" data-rich data-multiline>{{ sez.testo | markdownify }}</div>
+        </div>
+        <figure class="tf__pic span-6 start-7"><img src="{{ sez.foto | relative_url }}" alt="{{ sez.alt }}" loading="lazy" data-edit-img="{{ p }}"></figure>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,91 @@
+# La home della versione 1.0, sezione per sezione, dall'alto in basso.
+# Si modifica con il Forecolab Editor (o a mano). Ogni sezione ha un "tipo" che ne decide l'aspetto:
+#   apertura, frase, due-colonne, temi, team, elenco-foto, progetti, testo-foto, testo, galleria
+# "menu": la parola che compare nel menu in alto (vuota: la sezione non è nel menu).
+# Il team, i temi e i progetti sono negli elenchi condivisi con la prima versione:
+#   _data/team.yml, _data/temi.yml e la cartella _progetti/.
+sezioni:
+  - tipo: apertura
+    id: apertura
+    menu:
+    sopratitolo: Università Politecnica delle Marche, Ancona
+    titolo: Forest Ecology Laboratory
+    testo: Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste rispondono a gelate, siccità, vento e incendi.
+    pulsante_secondario: Vedi i temi di ricerca
+    link_secondario: "#temi"
+    foto:
+      - foto: /assets/img/lab-faggete.webp
+        alt: Faggete in autunno e prati d’altura sul crinale, con una strada che sale verso le antenne della vetta
+      - foto: /assets/img/lab-sanvicino.webp
+        alt: Il Monte San Vicino con i versanti di faggeta in autunno, visto da Poggio San Vicino
+      - foto: /assets/img/lab-appennino.webp
+        alt: Versanti dell’Appennino interamente coperti di bosco sopra un paese, sotto un cielo con nuvole sparse
+      - foto: /assets/img/lab-conero.webp
+        alt: Il versante boscato del Monte Conero che scende verso il mare, visto da Portonovo
+      - foto: /assets/img/lab-valle.webp
+        alt: Una valle stretta tra versanti boscati, con il bosco fitto in primo piano
+      - foto: /assets/img/lab-crinale.webp
+        alt: Un crinale coperto di brina al tramonto, con le antenne sulla cima
+
+  - tipo: frase
+    id: statement
+    menu:
+    etichetta: Il laboratorio
+    testo: Studiamo il bosco da due lati. Gli anelli del legno raccontano come gli alberi hanno risposto al clima, anno per anno. Droni, LiDAR e satelliti mostrano dove il bosco cresce oggi e dove, al **limite del bosco**, riesce ancora a salire.
+
+  - tipo: due-colonne
+    id: ricerca
+    menu: Ricerca
+    fondo: scuro
+    titolo: Due linee di ricerca
+    testo: Lo stesso bosco studiato da due lati, dentro il legno anno per anno e dall’alto albero per albero.
+    colonne:
+      - foto: /assets/img/photo-f83884075-2000.webp
+        alt: Sezione di un tronco con decine di anelli di crescita concentrici
+        titolo: Leggiamo gli anelli del legno
+        testo: Carote prelevate con la trivella di Pressler, misura degli anelli e sezioni sottili al microscopio, per datare la crescita e confrontarla con il clima.
+      - foto: /assets/img/photo-f150973498-1600.webp
+        alt: Chiome di un bosco viste dall’alto da un drone, attraversate da una strada
+        titolo: Rileviamo il bosco da drone e satellite
+        testo: Voli con LiDAR e camere multispettrali, serie Landsat e Sentinel-2 e modelli che portano le misure dal singolo albero alle Alpi e all’Appennino.
+
+  - tipo: temi
+    id: temi
+    menu: Temi
+    titolo: Temi di ricerca
+    testo: Quattro domande su cui lavoriamo oggi, ognuna con un sito di studio vero.
+
+  - tipo: team
+    id: team
+    menu: Team
+    titolo: Il team del Forecolab
+    testo: Dodici persone tra docenti, ricercatori, dottorandi e collaboratori dell’Area Sistemi Forestali.
+    gruppi:
+      - Docenti e ricercatori
+      - Telerilevamento e dottorato
+      - Collaboratori
+    foto: /assets/img/photo-f81721432-960.webp
+    alt: Un faggio secolare dai rami larghi in una faggeta dell’Appennino centrale
+
+  - tipo: elenco-foto
+    id: laboratorio
+    menu: Laboratorio
+    titolo: Il laboratorio e gli strumenti
+    testo: Il Forecolab ha due banchi, uno per il legno e uno per i dati da drone e da satellite.
+    voci:
+      - nome: Anelli e anatomia del legno
+        descrizione: Misura degli anelli e sezioni sottili al microscopio
+      - nome: Droni con sensori attivi e passivi
+        descrizione: LiDAR e camere multispettrali per rilievi ad alta risoluzione
+      - nome: Stazioni GNSS
+        descrizione: Rilievo di alberi e rinnovazione al centimetro
+      - nome: Workstation di calcolo
+        descrizione: Nuvole di punti, serie temporali e modelli
+    foto: /assets/img/photo-f195387881-1200.webp
+    alt: Sezione sottile di legno al microscopio, con vasi e raggi colorati in rosso
+
+  - tipo: progetti
+    id: progetti
+    menu: Progetti
+    titolo: Progetti in corso e recenti
+    testo: Finanziati da Unione Europea, ministeri, Regione Marche e agenzie canadesi.

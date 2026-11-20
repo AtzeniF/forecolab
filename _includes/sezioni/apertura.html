@@ -1,0 +1,17 @@
+{%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
+  <section class="hero hero--photo hero--slides" id="{{ sez.id }}" data-enter data-calm="left" data-sezione="{{ include.i }}" aria-labelledby="hero-h">
+    {%- for f in sez.foto %}
+    <img class="hero__bg hero__slide{% if forloop.first %} is-on{% endif %}" src="{{ f.foto | relative_url }}" alt="{{ f.alt }}"{% if forloop.first %} fetchpriority="high"{% endif %} decoding="async" data-edit-img="{{ p }}.foto.{{ forloop.index0 }}" data-list="{{ p }}.foto" data-index="{{ forloop.index0 }}">
+    {%- endfor %}
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__text">
+        <p class="hero__kicker" data-edit="{{ p }}.sopratitolo">{{ sez.sopratitolo }}</p>
+        <div class="hero__brand">
+          <img class="hero__logo" src="{{ '/assets/logo/logo-for-eco-lab.svg' | relative_url }}" alt="Forecolab" width="2283" height="2642">
+          <h1 id="hero-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h1>
+        </div>
+        <p class="hero__lead" data-edit="{{ p }}.testo">{{ sez.testo }}</p>
+        <div class="btn-row"><a class="btn btn--primary" href="{{ include.mail }}">Scrivi al laboratorio{{ include.arrow }}</a>{% if sez.pulsante_secondario %}<a class="btn btn--secondary" href="{{ sez.link_secondario }}" data-edit="{{ p }}.pulsante_secondario">{{ sez.pulsante_secondario }}</a>{% endif %}</div>
+      </div>
+    </div></div>
+  </section>

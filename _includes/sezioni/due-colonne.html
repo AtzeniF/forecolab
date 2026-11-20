@@ -1,0 +1,15 @@
+{%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
+  <section class="section{% if sez.fondo == 'scuro' %} ground-inverse{% endif %}" id="{{ sez.id }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="{{ sez.id }}-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h2><p data-edit="{{ p }}.testo">{{ sez.testo }}</p></div>
+      <div class="grid grid--top">
+        {%- for c in sez.colonne %}
+        <article class="line span-6" data-list="{{ p }}.colonne" data-index="{{ forloop.index0 }}">
+          <figure class="line__pic"><img src="{{ c.foto | relative_url }}" alt="{{ c.alt }}" loading="lazy" data-edit-img="{{ p }}.colonne.{{ forloop.index0 }}"></figure>
+          <h3 data-edit="{{ p }}.colonne.{{ forloop.index0 }}.titolo">{{ c.titolo }}</h3>
+          <p data-edit="{{ p }}.colonne.{{ forloop.index0 }}.testo">{{ c.testo }}</p>
+        </article>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>

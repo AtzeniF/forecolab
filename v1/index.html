@@ -70,6 +70,17 @@
   .hero--slides > .hero__slide { opacity: 0; transition: opacity 1.6s ease; }
   .hero--slides > .hero__slide.is-on { opacity: 1; }
   @media (prefers-reduced-motion: reduce) { .hero--slides > .hero__slide { transition: none; } }
+  /* sezioni generiche aggiunte dall'editor */
+  .tf__text h2, .section--testo h2 { margin: 0 0 var(--s-5); }
+  .tf__body > :first-child, .tx__body > :first-child { margin-top: 0; }
+  .tf__body p, .tx__body p { max-width: 60ch; font-size: var(--t-lead); line-height: 1.5; }
+  .tx__body { columns: 2 320px; column-gap: var(--s-7); }
+  .tf__pic, .gal__pic { margin: 0; border-radius: var(--r-lg); overflow: hidden; }
+  .tf__pic { aspect-ratio: 4 / 3; }
+  .gal__pic { aspect-ratio: 4 / 3; }
+  .tf__pic img, .gal__pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .footer__menu { columns: 2; }
+  @media (max-width: 1023px) { .tf__pic { margin-top: var(--s-6); } }
   /* ricerca: due linee */
   .line__pic { margin: 0 0 var(--s-5); border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 16 / 10; }
   .line__pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -123,11 +134,9 @@
     <a class="skip-link" href="#top">Vai al contenuto</a>
     <a class="nav__logo nav__logo--img" href="#top" aria-label="{{ s.nome }}, torna su"><img class="logo-albero" src="{{ '/assets/logo/logo-albero.svg' | relative_url }}" alt=""><img class="logo-scritta" src="{{ '/assets/logo/logo-scritta.svg' | relative_url }}" alt="Forecolab"></a>
     <nav class="nav__links" aria-label="Principale">
-      <div class="nav__item"><a class="nav__link" href="#ricerca">Ricerca</a></div>
-      <div class="nav__item"><a class="nav__link" href="#temi">Temi</a></div>
-      <div class="nav__item"><a class="nav__link" href="#team">Team</a></div>
-      <div class="nav__item"><a class="nav__link" href="#laboratorio">Laboratorio</a></div>
-      <div class="nav__item"><a class="nav__link" href="#progetti">Progetti</a></div>
+      {%- for sez in site.data.pagina.sezioni %}{% if sez.menu and sez.menu != "" %}
+      <div class="nav__item"><a class="nav__link" href="#{{ sez.id }}">{{ sez.menu }}</a></div>
+      {%- endif %}{% endfor %}
     </nav>
     <div class="nav__actions">
       <a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio</a>
@@ -139,112 +148,20 @@
 </header>
 
 <main id="top">
-  <section class="hero hero--photo hero--slides" data-enter data-calm="left" aria-labelledby="hero-h">
-    {%- for f in s.hero_foto %}
-    <img class="hero__bg hero__slide{% if forloop.first %} is-on{% endif %}" src="{{ f.foto | relative_url }}" alt="{{ f.alt }}"{% if forloop.first %} fetchpriority="high"{% endif %} decoding="async" data-source="stand-in" data-subject="apertura">
-    {%- endfor %}
-    <div class="wrap"><div class="hero-text">
-      <div class="hero__text">
-        <p class="hero__kicker">{{ s.hero_sopratitolo }}</p>
-        <div class="hero__brand">
-          <img class="hero__logo" src="{{ '/assets/logo/logo-for-eco-lab.svg' | relative_url }}" alt="Forecolab" width="2283" height="2642">
-          <h1 id="hero-h">{{ s.hero_titolo }}</h1>
-        </div>
-        <p class="hero__lead">Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste rispondono a gelate, siccità, vento e incendi.</p>
-        <div class="btn-row"><a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio{{ arrow }}</a><a class="btn btn--secondary" href="#temi">Vedi i temi di ricerca</a></div>
-      </div>
-    </div></div>
-  </section>
-
-  <section class="section statement" id="statement" data-moment="word-highlight" aria-label="Il laboratorio in breve">
-    <div class="wrap">
-      <p class="t-label">Il laboratorio</p>
-      <p class="mo-wh__text">Studiamo il bosco da due lati. Gli anelli del legno raccontano come gli alberi hanno risposto al clima, anno per anno. Droni, LiDAR e satelliti mostrano dove il bosco cresce oggi e dove, al <strong>limite del bosco</strong>, riesce ancora a salire.</p>
-    </div>
-  </section>
-
-  <section class="section ground-inverse" id="ricerca" aria-labelledby="ricerca-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="ricerca-h">Due linee di ricerca</h2><p>{{ s.metodi_testo }}</p></div>
-      <div class="grid grid--top">
-        <article class="line span-6">
-          <figure class="line__pic"><img src="{{ '/assets/img/photo-f83884075-2000.webp' | relative_url }}" alt="Sezione di un tronco con decine di anelli di crescita concentrici" loading="lazy" data-source="stand-in" data-subject="anelli"></figure>
-          <h3>Leggiamo gli anelli del legno</h3>
-          <p>Carote prelevate con la trivella di Pressler, misura degli anelli e sezioni sottili al microscopio, per datare la crescita e confrontarla con il clima.</p>
-        </article>
-        <article class="line span-6">
-          <figure class="line__pic"><img src="{{ '/assets/img/photo-f150973498-1600.webp' | relative_url }}" alt="Chiome di un bosco viste dall’alto da un drone, attraversate da una strada" loading="lazy" data-source="stand-in" data-subject="drone"></figure>
-          <h3>Rileviamo il bosco da drone e satellite</h3>
-          <p>Voli con LiDAR e camere multispettrali, serie Landsat e Sentinel-2 e modelli che portano le misure dal singolo albero alle Alpi e all’Appennino.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="temi" style="--hm: 2" aria-labelledby="temi-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="temi-h">Temi di ricerca</h2><p>{{ s.temi_testo }}</p></div>
-      <div class="grid grid--top fill" data-peek>
-        <ul class="rows span-6">
-          {%- for t in site.data.temi %}
-          <li data-peek-to="tema-{{ forloop.index }}" tabindex="0"><span class="rows__name">{{ t.titolo }}</span><p>{{ t.testo }}</p></li>
-          {%- endfor %}
-        </ul>
-        <div class="frame frame--photo frame--fill span-6 start-7">
-          {%- for t in site.data.temi %}
-          <img class="frame__img" data-peek-for="tema-{{ forloop.index }}" src="{{ t.foto | relative_url }}" alt="{{ t.alt }}" loading="lazy" data-source="stand-in" data-subject="tema"{% unless forloop.first %} hidden{% endunless %}>
-          {%- endfor %}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="team" aria-labelledby="team-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="team-h">Il team del {{ s.nome }}</h2><p>{{ s.team_testo }}</p></div>
-      <div class="grid grid--top people">
-        {%- for g in s.team_gruppi %}
-        <div class="span-3">
-          <p class="people__group">{{ g }}</p>
-          <ul class="people__list">
-            {%- for p in site.data.team %}{% if p.gruppo == g %}
-            <li><span class="people__head"><span class="people__name">{{ p.nome }}</span>{% if p.orcid %}<a class="people__orcid" href="https://orcid.org/{{ p.orcid }}" aria-label="Profilo ORCID di {{ p.nome }}"><img src="{{ '/assets/icons/orcid.svg' | relative_url }}" width="20" height="20" alt=""></a>{% endif %}</span><span class="people__topic">{{ p.tema }}</span></li>
-            {%- endif %}{% endfor %}
-          </ul>
-        </div>
-        {%- endfor %}
-        <div class="span-3 people__photo">
-          <img src="{{ s.foto_team | relative_url }}" alt="{{ s.foto_team_alt }}" loading="lazy" data-source="stand-in" data-subject="foto team">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="laboratorio" aria-labelledby="lab-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="lab-h">Il laboratorio e gli strumenti</h2><p>{{ s.laboratorio_testo }}</p></div>
-      <div class="grid grid--top">
-        <ul class="rows span-6">
-          {%- for x in site.data.strumenti %}
-          <li><span class="rows__name">{{ x.nome }}<small>{{ x.descrizione }}</small></span></li>
-          {%- endfor %}
-        </ul>
-        <figure class="develop span-6 start-7" data-moment="picture-develops"><img src="{{ s.foto_laboratorio | relative_url }}" alt="{{ s.foto_laboratorio_alt }}" width="1200" height="904" loading="lazy" data-source="stand-in" data-subject="laboratorio"></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="progetti" aria-labelledby="progetti-h">
-    <div class="wrap">
-      {%- assign progetti = site.progetti | sort: "ordine" %}
-      <div class="section-head"><h2 id="progetti-h">Progetti in corso e recenti</h2><p>{{ s.progetti_testo }}</p></div>
-      <div class="grid grid--top projects">
-        {%- for x in progetti %}
-        <a class="proj span-4" href="{{ x.url | relative_url }}"><span class="proj__pic m-zoom"><img src="{{ x.foto | relative_url }}" alt="{{ x.foto_alt }}" loading="lazy" data-source="stand-in" data-subject="progetto"></span><span class="proj__fund">{{ x.fondo }}</span><span class="proj__name">{{ x.nome }}</span></a>
-        {%- endfor %}
-      </div>
-    </div>
-  </section>
+{%- for sez in site.data.pagina.sezioni %}
+  {%- case sez.tipo %}
+  {%- when "apertura" %}{% include sezioni/apertura.html sez=sez i=forloop.index0 mail=mail arrow=arrow %}
+  {%- when "frase" %}{% include sezioni/frase.html sez=sez i=forloop.index0 %}
+  {%- when "due-colonne" %}{% include sezioni/due-colonne.html sez=sez i=forloop.index0 %}
+  {%- when "temi" %}{% include sezioni/temi.html sez=sez i=forloop.index0 %}
+  {%- when "team" %}{% include sezioni/team.html sez=sez i=forloop.index0 %}
+  {%- when "elenco-foto" %}{% include sezioni/elenco-foto.html sez=sez i=forloop.index0 %}
+  {%- when "progetti" %}{% include sezioni/progetti.html sez=sez i=forloop.index0 %}
+  {%- when "testo-foto" %}{% include sezioni/testo-foto.html sez=sez i=forloop.index0 %}
+  {%- when "testo" %}{% include sezioni/testo.html sez=sez i=forloop.index0 %}
+  {%- when "galleria" %}{% include sezioni/galleria.html sez=sez i=forloop.index0 %}
+  {%- endcase %}
+{%- endfor %}
 </main>
 
 <footer class="footer closing" id="contact" aria-labelledby="close-h">
@@ -262,9 +179,7 @@
           <a class="footer__logo" href="#top" aria-label="{{ s.nome }}, torna su"><img src="{{ '/assets/logo/logo-for-eco-lab.svg' | relative_url }}" alt="Forecolab" width="2283" height="2642"></a>
           <p class="footer__lede">Forest Ecology and Tree-Ring Laboratory, Area Sistemi Forestali del D3A. {{ s.indirizzo }}.</p>
         </div>
-        <div class="span-2 footer__col"><h3>Ricerca</h3><ul><li><a href="#ricerca">Linee</a></li><li><a href="#temi">Temi</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Laboratorio</h3><ul><li><a href="#laboratorio">Strumenti</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Gruppo</h3><ul><li><a href="#team">Team</a></li><li><a href="#progetti">Progetti</a></li></ul></div>
+        <div class="span-4 footer__col"><h3>Pagina</h3><ul class="footer__menu">{% for sez in site.data.pagina.sezioni %}{% if sez.menu and sez.menu != "" %}<li><a href="#{{ sez.id }}">{{ sez.menu }}</a></li>{% endif %}{% endfor %}</ul></div>
         <div class="span-2 footer__col"><h3>Contatti</h3><ul><li><a href="https://www.openstreetmap.org/search?query={{ s.indirizzo | url_encode }}">Vedi la zona</a></li><li><a href="https://www.d3a.univpm.it/">Dipartimento D3A</a></li></ul></div>
       </div>
       <div class="footer__legal">

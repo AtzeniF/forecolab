@@ -1,0 +1,21 @@
+{%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
+  <section class="section" id="{{ sez.id }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="{{ sez.id }}-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h2><p data-edit="{{ p }}.testo">{{ sez.testo }}</p></div>
+      <div class="grid grid--top people">
+        {%- for g in sez.gruppi %}
+        <div class="span-3">
+          <p class="people__group" data-edit="{{ p }}.gruppi.{{ forloop.index0 }}">{{ g }}</p>
+          <ul class="people__list">
+            {%- for persona in site.data.team %}{% if persona.gruppo == g %}
+            <li data-list="team" data-index="{{ forloop.index0 }}" data-gruppo="{{ g }}"><span class="people__head"><span class="people__name" data-edit="team.{{ forloop.index0 }}.nome">{{ persona.nome }}</span>{% if persona.orcid %}<a class="people__orcid" href="https://orcid.org/{{ persona.orcid }}" aria-label="Profilo ORCID di {{ persona.nome }}"><img src="{{ '/assets/icons/orcid.svg' | relative_url }}" width="20" height="20" alt=""></a>{% endif %}</span><span class="people__topic" data-edit="team.{{ forloop.index0 }}.tema">{{ persona.tema }}</span></li>
+            {%- endif %}{% endfor %}
+          </ul>
+        </div>
+        {%- endfor %}
+        <div class="span-3 people__photo">
+          <img src="{{ sez.foto | relative_url }}" alt="{{ sez.alt }}" loading="lazy" data-edit-img="{{ p }}">
+        </div>
+      </div>
+    </div>
+  </section>

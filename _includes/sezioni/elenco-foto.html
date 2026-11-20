@@ -1,0 +1,14 @@
+{%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
+  <section class="section" id="{{ sez.id }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="{{ sez.id }}-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h2><p data-edit="{{ p }}.testo">{{ sez.testo }}</p></div>
+      <div class="grid grid--top">
+        <ul class="rows span-6">
+          {%- for x in sez.voci %}
+          <li data-list="{{ p }}.voci" data-index="{{ forloop.index0 }}"><span class="rows__name"><span data-edit="{{ p }}.voci.{{ forloop.index0 }}.nome">{{ x.nome }}</span><small data-edit="{{ p }}.voci.{{ forloop.index0 }}.descrizione">{{ x.descrizione }}</small></span></li>
+          {%- endfor %}
+        </ul>
+        <figure class="develop span-6 start-7" data-moment="picture-develops"><img src="{{ sez.foto | relative_url }}" alt="{{ sez.alt }}" loading="lazy" data-edit-img="{{ p }}"></figure>
+      </div>
+    </div>
+  </section>
