@@ -4,6 +4,9 @@
 # "menu": la parola che compare nel menu in alto (vuota: la sezione non è nel menu).
 # Il team, i temi e i progetti sono negli elenchi condivisi con la prima versione:
 #   _data/team.yml, _data/temi.yml e la cartella _progetti/.
+# "altezza": quanti schermi è alta almeno la sezione (vuoto = 1; 0 = quanto il contenuto); "larghezza": in % della normale.
+# "ex" e "archivio": i testi delle pagine degli ex collaboratori (persone con "ex: true" in _data/team.yml)
+#   e dell'archivio dei progetti conclusi (progetti con "archiviato: true").
 sezioni:
   - tipo: apertura
     id: apertura
@@ -89,3 +92,10 @@ sezioni:
     menu: Progetti
     titolo: Progetti in corso e recenti
     testo: Finanziati da Unione Europea, ministeri, Regione Marche e agenzie canadesi.
+
+ex:
+  titolo: Ex collaboratori
+  testo: Chi ha lavorato con il Forecolab negli anni passati, con il tema di cui si è occupato.
+archivio:
+  titolo: Archivio dei progetti
+  testo: I progetti conclusi del laboratorio.

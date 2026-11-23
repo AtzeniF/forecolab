@@ -1,5 +1,5 @@
 {%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
-  <section class="section{% if sez.fondo == 'scuro' %} ground-inverse{% endif %}" id="{{ sez.id }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
+  <section class="section{% if sez.fondo == 'scuro' %} ground-inverse{% endif %}" id="{{ sez.id }}" style="{{ include.stile }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
     <div class="wrap">
       <div class="grid grid--top">
         <div class="span-6 tf__text">

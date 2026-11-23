@@ -1,0 +1,20 @@
+---
+# L'archivio: i progetti di _progetti/ con "archiviato: true". Titolo e testo in _data/pagina.yml (archivio).
+layout: v1
+titolo: Archivio dei progetti
+---
+{%- assign pg = site.data.pagina.archivio -%}
+{%- assign progetti = site.progetti | sort: "ordine" -%}
+  <section class="section" id="archivio" style="--h: 0" aria-labelledby="archivio-h">
+    <div class="wrap">
+      <a class="page-back" href="{{ '/v1/' | relative_url }}#progetti"><span aria-hidden="true">←</span> I progetti in corso</a>
+      <div class="section-head"><h2 id="archivio-h" data-edit="pagina.archivio.titolo">{{ pg.titolo }}</h2><p data-edit="pagina.archivio.testo">{{ pg.testo }}</p></div>
+      <div class="grid grid--top projects">
+        {%- assign nessuno = true -%}
+        {%- for x in progetti %}{% if x.archiviato %}{% assign nessuno = false %}
+        <a class="proj span-4" href="{{ x.url | relative_url }}" data-progetto="{{ x.slug }}"><span class="proj__pic m-zoom"><img src="{{ x.foto | relative_url }}" alt="{{ x.foto_alt }}" loading="lazy"></span><span class="proj__fund">{{ x.fondo }}{% if x.periodo %} · {{ x.periodo }}{% endif %}</span><span class="proj__name">{{ x.nome }}</span></a>
+        {%- endif %}{% endfor %}
+      </div>
+      {%- if nessuno %}<p class="empty-note">Per ora nessun progetto concluso. Nel Forecolab Editor un progetto va qui con la casella «Progetto concluso».</p>{% endif %}
+    </div>
+  </section>

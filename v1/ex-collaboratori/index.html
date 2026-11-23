@@ -1,0 +1,27 @@
+---
+# Gli ex collaboratori: le persone di _data/team.yml con "ex: true". Titolo e testo in _data/pagina.yml (ex).
+layout: v1
+titolo: Ex collaboratori
+---
+{%- assign pg = site.data.pagina.ex -%}
+{%- assign facce = false -%}{%- for persona in site.data.team %}{% if persona.ex and persona.foto %}{% assign facce = true %}{% endif %}{% endfor -%}
+  <section class="section" id="ex" style="--h: 0" aria-labelledby="ex-h">
+    <div class="wrap">
+      <a class="page-back" href="{{ '/v1/' | relative_url }}#team"><span aria-hidden="true">←</span> Il team di oggi</a>
+      <div class="section-head"><h2 id="ex-h" data-edit="pagina.ex.titolo">{{ pg.titolo }}</h2><p data-edit="pagina.ex.testo">{{ pg.testo }}</p></div>
+      <ul class="grid grid--top ex-grid" style="list-style: none; padding: 0; margin: 0">
+        {%- assign nessuno = true -%}
+        {%- for persona in site.data.team %}{% if persona.ex %}{% assign nessuno = false %}
+        <li class="span-4 ex-card{% unless facce or persona.foto %} ex-card--solo{% endunless %}" data-list="team" data-index="{{ forloop.index0 }}" data-edit-img="team.{{ forloop.index0 }}" data-no-alt data-orcid="team.{{ forloop.index0 }}" data-ex>
+          {%- if facce or persona.foto %}<span class="people__face">{% if persona.foto %}<img src="{{ persona.foto | relative_url }}" alt="" loading="lazy">{% else %}{{ persona.nome | split: " " | first | slice: 0 }}{{ persona.nome | split: " " | last | slice: 0 }}{% endif %}</span>{% endif %}
+          <div>
+            <p class="ex-card__name"><span data-edit="team.{{ forloop.index0 }}.nome">{{ persona.nome }}</span>{% if persona.orcid %}<a class="people__orcid" href="https://orcid.org/{{ persona.orcid }}" aria-label="Profilo ORCID di {{ persona.nome }}"><img src="{{ '/assets/icons/orcid.svg' | relative_url }}" width="20" height="20" alt=""></a>{% endif %}</p>
+            {%- if persona.periodo %}<p class="ex-card__when" data-edit="team.{{ forloop.index0 }}.periodo">{{ persona.periodo }}</p>{% endif %}
+            <p class="ex-card__topic" data-edit="team.{{ forloop.index0 }}.tema">{{ persona.tema }}</p>
+          </div>
+        </li>
+        {%- endif %}{% endfor %}
+      </ul>
+      {%- if nessuno %}<p class="empty-note">Per ora nessuno. Nel Forecolab Editor si sposta qui una persona del team con la casella «Ex collaboratore».</p>{% endif %}
+    </div>
+  </section>

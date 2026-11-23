@@ -30,6 +30,15 @@ content:
       - name: orcid
         label: ORCID (solo il codice, es. 0000-0002-1234-5678)
         type: string
+      - name: foto
+        label: Foto della persona (facoltativa, quadrata)
+        type: image
+      - name: ex
+        label: Ex collaboratore (va nella pagina degli ex collaboratori)
+        type: boolean
+      - name: periodo
+        label: Anni nel gruppo, per gli ex (es. 2019–2023)
+        type: string
 
   - name: progetti
     label: Progetti
@@ -71,6 +80,9 @@ content:
       - name: foto_alt
         label: Cosa mostra la foto
         type: string
+      - name: archiviato
+        label: Progetto concluso (va nell'archivio)
+        type: boolean
       - name: body
         label: Testo della pagina del progetto
         type: rich-text
