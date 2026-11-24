@@ -11,7 +11,7 @@
           <h1 id="hero-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h1>
         </div>
         <p class="hero__lead" data-edit="{{ p }}.testo">{{ sez.testo }}</p>
-        <div class="btn-row"><a class="btn btn--primary" href="{{ include.mail }}">Scrivi al laboratorio{{ include.arrow }}</a>{% if sez.pulsante_secondario %}<a class="btn btn--secondary" href="{{ sez.link_secondario }}" data-edit="{{ p }}.pulsante_secondario">{{ sez.pulsante_secondario }}</a>{% endif %}</div>
+        <div class="btn-row"><a class="btn btn--primary" href="{{ include.mail }}" data-mail>{{ site.data.sito.pulsante_mail | default: "Scrivi al laboratorio" }}{{ include.arrow }}</a>{% if sez.pulsante_secondario %}<a class="btn btn--secondary" href="{{ sez.link_secondario }}" data-edit="{{ p }}.pulsante_secondario">{{ sez.pulsante_secondario }}</a>{% endif %}</div>
       </div>
     </div></div>
   </section>

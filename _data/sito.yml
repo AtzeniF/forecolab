@@ -1,4 +1,6 @@
-# Testi generali della home
+# Testi generali del sito. Nella versione 1.0 servono per il piede della pagina e i contatti
+# (contatti_*, pulsante_mail, email, piede_testo, indirizzo, link_contatti); si modificano nel Forecolab Editor.
+# hero_sopratitolo, hero_titolo e hero_foto: titolo accanto al logo e foto dell'apertura della prima versione.
 nome: ForEcoLab
 dipartimento: Dipartimento D3A, Università Politecnica delle Marche
 titolo: Laboratorio di ecologia forestale ad Ancona
@@ -28,9 +30,15 @@ foto_progetti: /assets/img/photo-f79437814.webp
 foto_progetti_alt: I versanti boscati del Monte Catria visti dal Monte Cucco
 contatti_titolo: Tesi, tirocini e collaborazioni
 contatti_testo: Per una tesi triennale o magistrale, un dottorato o un progetto comune.
+pulsante_mail: Scrivi al laboratorio
+piede_testo: Forest Ecology and Tree-Ring Laboratory, Area Sistemi Forestali del D3A.
+link_contatti:
+  - testo: Vedi la zona
+    url: https://www.openstreetmap.org/search?query=Via%20Brecce%20Bianche%2C%20Monte%20Dago%2C%20Ancona
+  - testo: Dipartimento D3A
+    url: https://www.d3a.univpm.it/
 foto_contatti: /assets/img/photo-f5036509-960.webp
 foto_contatti_alt: Il margine di una faggeta in autunno sopra un prato di montagna
-# Versione 1.0: titolo accanto al logo e foto dell'apertura, che si alternano da sole
 hero_sopratitolo: Università Politecnica delle Marche, Ancona
 hero_titolo: Forest Ecology Laboratory
 hero_foto:

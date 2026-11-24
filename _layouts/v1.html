@@ -81,6 +81,7 @@
   .gal__pic { aspect-ratio: 4 / 3; }
   .tf__pic img, .gal__pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .footer__menu { columns: 2; }
+  .footer__col a { overflow-wrap: anywhere; }
   @media (max-width: 1023px) { .tf__pic { margin-top: var(--s-6); } }
   /* ricerca: due linee */
   .line__pic { margin: 0 0 var(--s-5); border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 16 / 10; }
@@ -216,7 +217,7 @@
       {%- endif %}{% endfor %}
     </nav>
     <div class="nav__actions">
-      <a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio</a>
+      <a class="btn btn--primary" href="{{ mail }}" data-mail>{{ s.pulsante_mail | default: "Scrivi al laboratorio" }}</a>
     </div>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
       <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -228,23 +229,23 @@
 {{ content }}
 </main>
 
-<footer class="footer closing" id="contact" aria-labelledby="close-h">
+<footer class="footer closing" id="contact" aria-labelledby="close-h" data-piede>
   <div class="wrap">
     <div class="closing__cta close--photo">
       <div class="section-head--split">
-        <div><h2 id="close-h">{{ s.contatti_titolo }}</h2><p class="t-lead">{{ s.contatti_testo }}</p></div>
-        <a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio{{ arrow }}</a>
+        <div><h2 id="close-h" data-edit="sito.contatti_titolo">{{ s.contatti_titolo }}</h2><p class="t-lead" data-edit="sito.contatti_testo">{{ s.contatti_testo }}</p></div>
+        <a class="btn btn--primary" href="{{ mail }}" data-mail><span data-edit="sito.pulsante_mail">{{ s.pulsante_mail | default: "Scrivi al laboratorio" }}</span>{{ arrow }}</a>
       </div>
-      <div class="close__media"><img src="{{ s.foto_contatti | relative_url }}" alt="{{ s.foto_contatti_alt }}" loading="lazy" data-source="stand-in" data-subject="contatti"></div>
+      <div class="close__media"><img src="{{ s.foto_contatti | relative_url }}" alt="{{ s.foto_contatti_alt }}" loading="lazy" data-source="stand-in" data-subject="contatti" data-edit-img="sito" data-edit-chiave="foto_contatti" data-edit-alt="sito.foto_contatti_alt"></div>
     </div>
     <div class="closing__links">
       <div class="grid">
         <div class="span-4 stack-4">
           <a class="footer__logo" href="{{ home }}" aria-label="{{ s.nome }}, torna su"><img src="{{ '/assets/logo/logo-for-eco-lab.svg' | relative_url }}" alt="Forecolab" width="2283" height="2642"></a>
-          <p class="footer__lede">Forest Ecology and Tree-Ring Laboratory, Area Sistemi Forestali del D3A. {{ s.indirizzo }}.</p>
+          <p class="footer__lede"><span data-edit="sito.piede_testo">{{ s.piede_testo | default: "Forest Ecology and Tree-Ring Laboratory, Area Sistemi Forestali del D3A." }}</span> <span data-edit="sito.indirizzo">{{ s.indirizzo }}</span>.</p>
         </div>
         <div class="span-4 footer__col"><h3>Pagina</h3><ul class="footer__menu">{% for sez in site.data.pagina.sezioni %}{% if sez.menu and sez.menu != "" %}<li><a href="{{ home }}#{{ sez.id }}">{{ sez.menu }}</a></li>{% endif %}{% endfor %}</ul></div>
-        <div class="span-2 footer__col"><h3>Contatti</h3><ul><li><a href="https://www.openstreetmap.org/search?query={{ s.indirizzo | url_encode }}">Vedi la zona</a></li><li><a href="https://www.d3a.univpm.it/">Dipartimento D3A</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Contatti</h3><ul>{% unless s.email contains ".example" %}<li><a href="{{ mail }}" data-mail>{{ s.email }}</a></li>{% endunless %}{% for l in s.link_contatti %}<li><a href="{{ l.url }}">{{ l.testo }}</a></li>{% endfor %}</ul></div>
       </div>
       <div class="footer__legal">
         <span>&copy; {{ site.time | date: "%Y" }} {{ s.nome }}, Università Politecnica delle Marche</span>
@@ -256,7 +257,7 @@
 </footer>
 
 <nav class="actionbar" aria-label="Azioni rapide">
-  <a class="btn btn--primary" href="{{ mail }}">Scrivi al laboratorio</a>
+  <a class="btn btn--primary" href="{{ mail }}" data-mail>{{ s.pulsante_mail | default: "Scrivi al laboratorio" }}</a>
 </nav>
 
 <script>

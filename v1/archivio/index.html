@@ -12,7 +12,7 @@ titolo: Archivio dei progetti
       <div class="grid grid--top projects">
         {%- assign nessuno = true -%}
         {%- for x in progetti %}{% if x.archiviato %}{% assign nessuno = false %}
-        <a class="proj span-4" href="{{ x.url | relative_url }}" data-progetto="{{ x.slug }}"><span class="proj__pic m-zoom"><img src="{{ x.foto | relative_url }}" alt="{{ x.foto_alt }}" loading="lazy"></span><span class="proj__fund">{{ x.fondo }}{% if x.periodo %} · {{ x.periodo }}{% endif %}</span><span class="proj__name">{{ x.nome }}</span></a>
+        <a class="proj span-4" href="{{ x.url | relative_url }}" data-progetto="{{ x.slug }}" data-archiviato><span class="proj__pic m-zoom"><img src="{{ x.foto | relative_url }}" alt="{{ x.foto_alt }}" loading="lazy"></span><span class="proj__fund">{{ x.fondo }}{% if x.periodo %} · {{ x.periodo }}{% endif %}</span><span class="proj__name">{{ x.nome }}</span></a>
         {%- endif %}{% endfor %}
       </div>
       {%- if nessuno %}<p class="empty-note">Per ora nessun progetto concluso. Nel Forecolab Editor un progetto va qui con la casella «Progetto concluso».</p>{% endif %}

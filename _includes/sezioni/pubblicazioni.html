@@ -11,7 +11,7 @@
         {%- assign voci = site.data.pubblicazioni[e] -%}
         {%- if e == "articoli" %}{% assign nome = sez.titolo_articoli | default: "Articoli su rivista" %}{% assign chiave = "titolo_articoli" %}{% else %}{% assign nome = sez.titolo_conferenze | default: "Contributi a convegni" %}{% assign chiave = "titolo_conferenze" %}{% endif %}
         <div class="pub-box {{ larga }}">
-          <div class="pub-box__head"><h3 id="{{ sez.id }}-{{ e }}" data-edit="{{ p }}.{{ chiave }}">{{ nome }}</h3><span class="pub-box__n">{{ voci | size }}</span></div>
+          <div class="pub-box__head" data-elenco="{{ e }}"><h3 id="{{ sez.id }}-{{ e }}" data-edit="{{ p }}.{{ chiave }}">{{ nome }}</h3><span class="pub-box__n">{{ voci | size }}</span></div>
           <div class="pub-scroll" role="region" aria-labelledby="{{ sez.id }}-{{ e }}" tabindex="0">
             <ol class="pub-list">
               {%- assign anno = "" -%}
