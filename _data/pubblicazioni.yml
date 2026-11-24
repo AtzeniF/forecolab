@@ -6,6 +6,26 @@
 # Solo i lavori con una persona del team come primo autore. Nell'editor «Aggiorna da ORCID» aggiunge quelli nuovi
 #   dai profili ORCID del team (autori da Crossref o da ORCID); le voci già presenti restano come sono.
 articoli:
+  - autori: Pelino G., Vitali A., Tonelli E., Gennaretti F., Urbinati C.
+    anno: 2026
+    titolo: Structural Traits of Old-Growth Beech Forests in the Central Apennines (Italy)
+    rivista: Land
+    doi: 10.3390/land15071291
+  - autori: Gerla F., Nepi L., Cățeanu M., Ferroni F., Ee Hung K., Mocny K., …, Balestra M.
+    anno: 2026
+    titolo: 'High-resolution land cover mapping with GeoAI: instance segmentation for land cover analysis'
+    rivista: The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences
+    doi: 10.5194/isprs-archives-xlix-b4-2026-133-2026
+  - autori: Barbier L.N., Lemay M.A., Boucher É., Rossi S., Gennaretti F.
+    anno: 2026
+    titolo: Modeling eccentric growth explicitly to investigate intra-annual drivers of xylem cell production using xylogenetic data
+    rivista: Forest Ecosystems
+    doi: 10.1016/j.fecs.2025.100413
+  - autori: Boche M., Lemay M.A., Bouchut S., Bergeron Y., Pappas C., Girona M.M., Buttò V., Gennaretti F.
+    anno: 2026
+    titolo: 'Resource utilization strategies and longevity of Thuja occidentalis across contrasting substrates: Insights from morphological and physiological traits'
+    rivista: Dendrochronologia
+    doi: 10.1016/j.dendro.2026.126484
   - autori: Balestra M., Carloni F., Turchi P., Murolo S., Urbinati C., Belcore E., Vitali A.
     anno: 2026
     titolo: Integrating UAV multispectral and LiDAR data with field assessments to monitor chestnut ink disease severity
@@ -26,6 +46,26 @@ articoli:
     titolo: Fine-scale topographic filtering and seed limitation shape post-fire regeneration patterns in Mediterranean pine forests
     rivista: Forest Ecology and Management
     doi: 10.1016/j.foreco.2026.124069
+  - autori: Gambelli D., Dappozzo A., Cameli A., Urbinati C., Vitali A.
+    anno: 2025
+    titolo: 'Valuing cultural ecosystem services: an application to forest areas in Marche Region, Italy'
+    rivista: Aestimum
+    doi: 10.36253/aestim-16391
+  - autori: Gery F., Lemay M., DesRochers A., Fenton N., Girona M.M., Ryser P., Poirier V., Gennaretti F.
+    anno: 2025
+    titolo: A restoration strategy to promote tree establishment in mining‐polluted rocky outcrops using bryophytes
+    rivista: Restoration Ecology
+    doi: 10.1111/rec.70196
+  - autori: Thivierge-Lampron J., Girona M.M., Pappas C., Duchesne L., Chavardès R.D., Balducci L., …, Gennaretti F.
+    anno: 2025
+    titolo: Stem Water Storage Dynamics of Three Boreal Tree Species Under Short-Term Drought
+    rivista: Forests
+    doi: 10.3390/f16091448
+  - autori: Dejoie E., Lemay M.A., Fenton N.J., DesRochers A., Marion J., Savard M.M., …, Gennaretti F.
+    anno: 2025
+    titolo: 'Spatiotemporal assessment of lead (Pb) and cadmium (Cd) contamination in urban tree rings near an industrial smelter: high intraspecific variability but limited spatial differentiation'
+    rivista: Atmospheric Pollution Research
+    doi: 10.1016/j.apr.2025.102582
   - autori: Balestra M., Tonelli E., Lizzi L., Pierdicca R., Urbinati C., Vitali A.
     anno: 2025
     titolo: 'A Digital Replica of a Marteloscope: A Technical and Educational Tool for Smart Forestry Management'
@@ -46,6 +86,21 @@ articoli:
     titolo: 'Forestlines in Italian mountains are shifting upward: detection and monitoring using satellite time series'
     rivista: Biogeosciences
     doi: 10.5194/bg-22-4349-2025
+  - autori: Murgia I., Vitali A., Giadrossich F., Tonelli E., Baglioni L., Cohen D., Schwarz M., Urbinati C.
+    anno: 2024
+    titolo: Effects of Land Cover Changes on Shallow Landslide Susceptibility Using SlideforMAP Software (Mt. Nerone, Italy)
+    rivista: Land
+    doi: 10.3390/land13101575
+  - autori: Soubeyrand M., Marchand P., Duchesne L., Bergeron Y., Gennaretti F.
+    anno: 2024
+    titolo: Interactions between climate, soil and competition drive tree growth in Quebec forests
+    rivista: Forest Ecology and Management
+    doi: 10.1016/j.foreco.2024.121731
+  - autori: Murolo S., Vitali A., Carloni F., Landi L., Romanazzi G., Urbinati C.
+    anno: 2024
+    titolo: 'Protection from ink disease of Castanea sativa orchards: first steps of INKAS Project, the Rural Development Program for Marche region (central-eastern Italy)'
+    rivista: Acta Horticulturae
+    doi: 10.17660/actahortic.2024.1400.16
   - autori: Balestra M., Cabo C., Murtiyoso A., Vitali A., Alvarez-Taboada F., Cantero-Amiano A., et al.
     anno: 2024
     titolo: 'Advancing forest inventory: a comparative study of low-cost MLS lidar device with professional laser scanners'
@@ -56,6 +111,16 @@ articoli:
     titolo: 'High definition 3D models of small legume seed: a close up application to support ancient plant genomics'
     rivista: The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences
     doi: 10.5194/isprs-archives-xlviii-3-2024-17-2024
+  - autori: Pierdicca R., Nepi L., Mancini A., Malinverni E.S., Balestra M.
+    anno: 2023
+    titolo: 'UAV4TREE: DEEP LEARNING-BASED SYSTEM FOR AUTOMATIC CLASSIFICATION OF TREE SPECIES USING RGB OPTICAL IMAGES OBTAINED BY AN UNMANNED AERIAL VEHICLE'
+    rivista: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences
+    doi: 10.5194/isprs-annals-x-1-w1-2023-1089-2023
+  - autori: Chavardès R.D., Balducci L., Bergeron Y., Grondin P., Poirier V., Morin H., Gennaretti F.
+    anno: 2023
+    titolo: Greater tree species diversity and lower intraspecific competition attenuate impacts from temperature increases and insect epidemics in boreal forests of western Quebec, Canada
+    rivista: Canadian Journal of Forest Research
+    doi: 10.1139/cjfr-2022-0114
   - autori: Balestra M., Tonelli E., Vitali A., Urbinati C., Frontoni E., Pierdicca R.
     anno: 2023
     titolo: 'Geomatic Data Fusion for 3D Tree Modeling: The Case Study of Monumental Chestnut Trees'
@@ -76,6 +141,21 @@ articoli:
     titolo: A COMPARISON OF PRE-PROCESSING APPROACHES FOR REMOTELY SENSED TIME SERIES CLASSIFICATION BASED ON FUNCTIONAL ANALYSIS
     rivista: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences
     doi: 10.5194/isprs-annals-x-1-w1-2023-33-2023
+  - autori: Malandra F., Vitali A., Morresi D., Garbarino M., Foster D.E., Stephens S.L., Urbinati C.
+    anno: 2022
+    titolo: Burn Severity Drivers in Italian Large Wildfires
+    rivista: Fire
+    doi: 10.3390/fire5060180
+  - autori: Bartolucci A., Marconi M., Magni M., Pierdicca R., Malandra F., Ho T.C., Vitali A., Urbinati C.
+    anno: 2022
+    titolo: Combining Participatory Mapping and Geospatial Analysis Techniques to Assess Wildfire Risk in Rural North Vietnam
+    rivista: Environmental Management
+    doi: 10.1007/s00267-021-01582-8
+  - autori: Chiappini S., Pierdicca R., Malandra F., Tonelli E., Malinverni E.S., Urbinati C., Vitali A.
+    anno: 2022
+    titolo: Comparing Mobile Laser Scanner and manual measurements for dendrometric variables estimation in a black pine (Pinus nigra Arn.) plantation
+    rivista: Computers and Electronics in Agriculture
+    doi: 10.1016/j.compag.2022.107069
   - autori: Balestra M., Chiappini S., Vitali A., Tonelli E., Malandra F., Galli A., et al.
     anno: 2022
     titolo: INTEGRATION OF GEOMATIC TECHNIQUES FOR THE 3D REPRESENTATION AND MONITORING OF A VETERAN CHESTNUT TREE
@@ -86,6 +166,16 @@ articoli:
     titolo: 'Editorial: Quantitative wood anatomy to explore tree responses to global change'
     rivista: Frontiers in Plant Science
     doi: 10.3389/fpls.2022.998895
+  - autori: CUROVIC M., SPALEVIC V., SESTRAS P., MOTTA R., DAN C., GARBARINO M., VITALI A., URBINATI C.
+    anno: 2020
+    titolo: Structural and ecological characteristics of mixed broadleaved old-growth forest(Biogradska Gora - Montenegro)
+    rivista: TURKISH JOURNAL OF AGRICULTURE AND FORESTRY
+    doi: 10.3906/tar-2003-103
+  - autori: Corti G., Urbinati C., Cocco S., Casucci C., Toscano G., Finco A., …, Vitali A.
+    anno: 2020
+    titolo: 'Forests and Soils: Sustainable Products and Ecosystem Services for Human Well-Being'
+    rivista: The First Outstanding 50 Years of “Università Politecnica delle Marche”
+    doi: 10.1007/978-3-030-33832-9_39
   - autori: Tonelli E., Vitali A., Piermattei A., Urbinati C.
     anno: 2020
     titolo: Are young trees suitable for climate-growth analysis? A trial with Pinus nigra in the central Apennines treeline
@@ -96,11 +186,26 @@ articoli:
     titolo: Mining ecophysiological responses of European beech ecosystems to drought
     rivista: Agricultural and Forest Meteorology
     doi: 10.1016/j.agrformet.2019.107780
+  - autori: Malandra F., Vitali A., Urbinati C., Weisberg P.J., Garbarino M.
+    anno: 2019
+    titolo: Patterns and drivers of forest landscape change in the Apennines range, Italy
+    rivista: Regional Environmental Change
+    doi: 10.1007/s10113-019-01531-6
   - autori: Vitali A., Garbarino M., Camarero J.J., Malandra F., Toromani E., Spalevic V., Čurović M., Urbinati C.
     anno: 2019
     titolo: Pine recolonization dynamics in Mediterranean human-disturbed treeline ecotones
     rivista: Forest Ecology and Management
     doi: 10.1016/j.foreco.2018.12.039
+  - autori: Sangelantoni L., Russo A., Gennaretti F.
+    anno: 2018
+    titolo: 'Impact of bias correction and downscaling through quantile mapping on simulated climate change signal: a case study over Central Italy'
+    rivista: Theoretical and Applied Climatology
+    doi: 10.1007/s00704-018-2406-8
+  - autori: Malandra F., Vitali A., Urbinati C., Garbarino M.
+    anno: 2018
+    titolo: '70 Years of Land Use/Land Cover Changes in the Apennines (Italy): A Meta-Analysis'
+    rivista: Forests
+    doi: 10.3390/f9090551
   - autori: Vitali A., Urbinati C., Weisberg P.J., Urza A.K., Garbarino M.
     anno: 2018
     titolo: Effects of natural and anthropogenic drivers on land‐cover change and treeline dynamics in the Apennines (Italy)
@@ -111,6 +216,11 @@ articoli:
     titolo: Underestimation of the Tambora effects in North American taiga ecosystems
     rivista: Environmental Research Letters
     doi: 10.1088/1748-9326/aaac0c
+  - autori: Piermattei A., Garbarino M., Urbinati C.
+    anno: 2017
+    titolo: 'Corrigendum to “Structural attributes, tree-ring growth and climate sensitivity of Pinus nigra Arn. at high altitude: Common patterns of a possible treeline shift in the central Apennines (Italy)” [Dendrochronologia 32 (3) (2014) 210–219]'
+    rivista: Dendrochronologia
+    doi: 10.1016/j.dendro.2017.01.008
   - autori: Vitali A., Camarero J.J., Garbarino M., Piermattei A., Urbinati C.
     anno: 2017
     titolo: 'Deconstructing human-shaped treelines: Microsite topography and distance to seed source control Pinus nigra colonization of treeless areas in the Italian Apennines'
@@ -126,11 +236,26 @@ articoli:
     titolo: Ecophysiological modeling of photosynthesis and carbon allocation to the tree stem in the boreal forest
     rivista: Biogeosciences
     doi: 10.5194/bg-14-4851-2017
+  - autori: Garbarino M., Weisberg P.J., Bagnara L., Urbinati C.
+    anno: 2015
+    titolo: Sex-related spatial segregation along environmental gradients in the dioecious conifer, Taxus baccata
+    rivista: Forest Ecology and Management
+    doi: 10.1016/j.foreco.2015.09.009
   - autori: Gennaretti F., Sangelantoni L., Grenier P.
     anno: 2015
     titolo: Toward daily climate scenarios for Canadian Arctic coastal zones with more realistic temperature‐precipitation interdependence
     rivista: 'Journal of Geophysical Research: Atmospheres'
     doi: 10.1002/2015jd023890
+  - autori: Piermattei A., Crivellaro A., Carrer M., Urbinati C.
+    anno: 2014
+    titolo: 'The “blue ring”: anatomy and formation hypothesis of a new tree-ring anomaly in conifers'
+    rivista: Trees
+    doi: 10.1007/s00468-014-1107-x
+  - autori: Mazza G., Gallucci V., Manetti M.C., Urbinati C.
+    anno: 2014
+    titolo: Climate–growth relationships of silver fir (Abies alba Mill.) in marginal populations of Central Italy
+    rivista: Dendrochronologia
+    doi: 10.1016/j.dendro.2014.04.004
   - autori: Gennaretti F., Arseneault D., Bégin Y.
     anno: 2014
     titolo: Millennial disturbance‐driven forest stand dynamics in the Eastern Canadian taiga reconstructed from subfossil logs
@@ -146,6 +271,51 @@ articoli:
     titolo: Millennial stocks and fluxes of large woody debris in lakes of the North American taiga
     rivista: Journal of Ecology
     doi: 10.1111/1365-2745.12198
+  - autori: Piermattei A., Renzaglia F., Urbinati C.
+    anno: 2012
+    titolo: Recent expansion of Pinus nigra Arn. above the timberline in the central Apennines, Italy
+    rivista: Annals of Forest Science
+    doi: 10.1007/s13595-012-0207-2
+  - autori: Carrer M., Nola P., Motta R., Urbinati C.
+    anno: 2010
+    titolo: Contrasting tree‐ring growth to climate responses of Abies alba toward the southern limit of its distribution area
+    rivista: Oikos
+    doi: 10.1111/j.1600-0706.2010.18293.x
+  - autori: Corona C., Guiot J., Edouard J.L., Chalié F., Büntgen U., Nola P., Urbinati C.
+    anno: 2010
+    titolo: Millennium-long summer temperature variations in the European Alps as reconstructed from tree rings
+    rivista: Climate of the Past
+    doi: 10.5194/cp-6-379-2010
+  - autori: Bartolucci A., Giacchini P., Renzaglia F., Urbinati C.
+    anno: 2007
+    titolo: Close-to-nature silviculture for conservation and restoration of diurnal raptors forest habitats in the SCI Alpe della Luna-Bocca Trabaria | Selvicoltura naturalistica per la conservazione ed il miglioramento di habitat forestali di rapaci diurni nel SIC Alpe della Luna-Bocca Trabaria (PU)
+    rivista: Fitosociologia
+    link: http://www.scopus.com/inward/record.url?eid=2-s2.0-77957348298&partnerID=MN8TOARS
+  - autori: CARRER M., NOLA P., EDUARD J.L., MOTTA R., URBINATI C.
+    anno: 2007
+    titolo: Regional variability of climate–growth relationships in Pinus cembra high elevation forests in the Alps
+    rivista: Journal of Ecology
+    doi: 10.1111/j.1365-2745.2007.01281.x
+  - autori: Carrer M., Urbinati C.
+    anno: 2006
+    titolo: Long‐term change in the sensitivity of tree‐ring growth to climate forcing in Larix decidua
+    rivista: New Phytologist
+    doi: 10.1111/j.1469-8137.2006.01703.x
+  - autori: Carrer M., Urbinati C.
+    anno: 2004
+    titolo: AGE-DEPENDENT TREE-RING GROWTH RESPONSES TO CLIMATE IN LARIX DECIDUA AND PINUS CEMBRA
+    rivista: Ecology
+    doi: 10.1890/02-0478
+  - autori: Pellegrini G.B., Surian N., Urbinati C.
+    anno: 2004
+    titolo: 'Dating and explanation of Late Glacial - Holocene landslides: A case study from the Southern Alps, Italy'
+    rivista: Zeitschrift fur Geomorphologie
+    link: http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000222576300006&KeyUID=WOS:000222576300006
+  - autori: Carrer M., Urbinati C.
+    anno: 2001
+    titolo: Spatial analysis of structural and tree‐ring related parameters in a timberline forest in the Italian Alps
+    rivista: Journal of Vegetation Science
+    doi: 10.2307/3236904
 conferenze:
   - autori: Balestra M., Giulioni F., Fiorani F., Gennaretti F., Pierdicca R., Urbinati C., Vitali A.
     anno: 2026
