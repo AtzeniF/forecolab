@@ -46,6 +46,11 @@ articoli:
     titolo: Fine-scale topographic filtering and seed limitation shape post-fire regeneration patterns in Mediterranean pine forests
     rivista: Forest Ecology and Management
     doi: 10.1016/j.foreco.2026.124069
+  - autori: Balestra M., Paolanti M., Pierdicca R.
+    anno: 2025
+    titolo: 'WHU-RS19 ABZSL: An Attribute-Based Dataset for Remote Sensing Image Understanding'
+    rivista: Remote Sensing
+    doi: 10.3390/rs17142384
   - autori: Gambelli D., Dappozzo A., Cameli A., Urbinati C., Vitali A.
     anno: 2025
     titolo: 'Valuing cultural ecosystem services: an application to forest areas in Marche Region, Italy'
@@ -76,11 +81,6 @@ articoli:
     titolo: Variation in radial growth sensitivity to drought among genetic groups of common yew (Taxus baccata L.) in central Italy
     rivista: Dendrochronologia
     doi: 10.1016/j.dendro.2025.126360
-  - autori: Balestra M., Paolanti M., Pierdicca R.
-    anno: 2025
-    titolo: 'WHU-RS19 ABZSL: An Attribute-Based Dataset for Remote Sensing Image Understanding'
-    rivista: Remote Sensing
-    doi: 10.3390/rs17142384
   - autori: Baglioni L., Morresi D., Garbarino M., Urbinati C., Lingua E., Marzano R., Vitali A.
     anno: 2025
     titolo: 'Forestlines in Italian mountains are shifting upward: detection and monitoring using satellite time series'
@@ -216,11 +216,6 @@ articoli:
     titolo: Underestimation of the Tambora effects in North American taiga ecosystems
     rivista: Environmental Research Letters
     doi: 10.1088/1748-9326/aaac0c
-  - autori: Piermattei A., Garbarino M., Urbinati C.
-    anno: 2017
-    titolo: 'Corrigendum to “Structural attributes, tree-ring growth and climate sensitivity of Pinus nigra Arn. at high altitude: Common patterns of a possible treeline shift in the central Apennines (Italy)” [Dendrochronologia 32 (3) (2014) 210–219]'
-    rivista: Dendrochronologia
-    doi: 10.1016/j.dendro.2017.01.008
   - autori: Vitali A., Camarero J.J., Garbarino M., Piermattei A., Urbinati C.
     anno: 2017
     titolo: 'Deconstructing human-shaped treelines: Microsite topography and distance to seed source control Pinus nigra colonization of treeless areas in the Italian Apennines'

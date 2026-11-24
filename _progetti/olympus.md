@@ -6,8 +6,8 @@ ordine: 1
 periodo:
 codice:
 sito_ufficiale:
-foto: /assets/img/photo-f15817313.webp
-foto_alt: Il Monte Nerone con i prati sommitali sopra il limite del bosco
+foto: /assets/img/foto-20261124-2025-06-26-17-46-53-4832-4.webp
+foto_alt: Il Becco di Mezzo Dì, in provincia di Belluno. zona di una delle aree studio del progetto OLYMPUS.
 ---
 OLYMPUS (*spatiO-temporaL analYsis of Mediterranean treeline Patterns: a mUltiScale approach*) studia il limite superiore del bosco sulle due grandi catene montuose della penisola, le Alpi e gli Appennini, e come si sposta nel tempo.
 
