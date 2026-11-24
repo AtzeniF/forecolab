@@ -1,0 +1,41 @@
+{%- assign sez = include.sez -%}{%- capture p -%}pagina.sezioni.{{ include.i }}{%- endcapture -%}
+{%- comment -%} gli elenchi sono in _data/pubblicazioni.yml; "mostra": entrambi, articoli o conferenze (per farne due sezioni) {%- endcomment -%}
+{%- assign mostra = sez.mostra | default: "entrambi" -%}
+{%- assign elenchi = "articoli,conferenze" | split: "," -%}
+{%- if mostra == "entrambi" %}{% assign larga = "span-6" %}{% else %}{% assign larga = "span-12" %}{% endif %}
+  <section class="section{% if sez.fondo == 'scuro' %} ground-inverse{% endif %}" id="{{ sez.id }}" style="{{ include.stile }}" data-sezione="{{ include.i }}" aria-labelledby="{{ sez.id }}-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="{{ sez.id }}-h" data-edit="{{ p }}.titolo">{{ sez.titolo }}</h2><p data-edit="{{ p }}.testo">{{ sez.testo }}</p></div>
+      <div class="grid grid--top pubs">
+        {%- for e in elenchi %}{% if mostra == "entrambi" or mostra == e %}
+        {%- assign voci = site.data.pubblicazioni[e] -%}
+        {%- if e == "articoli" %}{% assign nome = sez.titolo_articoli | default: "Articoli su rivista" %}{% assign chiave = "titolo_articoli" %}{% else %}{% assign nome = sez.titolo_conferenze | default: "Contributi a convegni" %}{% assign chiave = "titolo_conferenze" %}{% endif %}
+        <div class="pub-box {{ larga }}">
+          <div class="pub-box__head"><h3 id="{{ sez.id }}-{{ e }}" data-edit="{{ p }}.{{ chiave }}">{{ nome }}</h3><span class="pub-box__n">{{ voci | size }}</span></div>
+          <div class="pub-scroll" role="region" aria-labelledby="{{ sez.id }}-{{ e }}" tabindex="0">
+            <ol class="pub-list">
+              {%- assign anno = "" -%}
+              {%- for x in voci %}
+              {%- assign a = x.anno | append: "" %}{% if a != anno %}{% assign anno = a %}
+              <li class="pub-year" aria-hidden="true">{{ anno }}</li>
+              {%- endif %}
+              {%- capture q %}pubblicazioni.{{ e }}.{{ forloop.index0 }}{% endcapture %}
+              <li class="pub" data-list="pubblicazioni.{{ e }}" data-index="{{ forloop.index0 }}">
+                {%- if x.doi and x.doi != "" %}{% capture url %}https://doi.org/{{ x.doi }}{% endcapture %}{% elsif x.link and x.link != "" %}{% assign url = x.link %}{% else %}{% assign url = "" %}{% endif %}
+                <span class="pub__title">{% if url != "" %}<a href="{{ url }}" target="_blank" rel="noopener" data-edit="{{ q }}.titolo">{{ x.titolo }}</a>{% else %}<span data-edit="{{ q }}.titolo">{{ x.titolo }}</span>{% endif %}</span>
+                {%- if x.autori and x.autori != "" %}<span class="pub__who" data-edit="{{ q }}.autori">{{ x.autori }}</span>{% endif %}
+                {%- if e == "articoli" %}
+                <span class="pub__where"><span data-edit="{{ q }}.rivista">{{ x.rivista }}</span>, {{ x.anno }}</span>
+                {%- else %}
+                <span class="pub__where"><span data-edit="{{ q }}.convegno">{{ x.convegno }}</span>{% if x.luogo and x.luogo != "" %}, {{ x.luogo }}{% endif %}, {{ x.anno }}{% if x.tipo and x.tipo != "" %} <span class="proj-tag">{{ x.tipo }}</span>{% endif %}</span>
+                {%- endif %}
+              </li>
+              {%- endfor %}
+            </ol>
+            {%- if voci.size == 0 %}<p class="empty-note">Ancora nessuna voce.</p>{% endif %}
+          </div>
+        </div>
+        {%- endif %}{% endfor %}
+      </div>
+    </div>
+  </section>

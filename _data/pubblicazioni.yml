@@ -1,0 +1,621 @@
+# Gli articoli e i contributi a convegni del laboratorio, dal più recente.
+# Si modifica con il Forecolab Editor (o a mano). La sezione "pubblicazioni" di _data/pagina.yml li mostra
+#   in due riquadri che scorrono ognuno per conto suo.
+# articoli: autori, anno, titolo, rivista, doi (solo il codice, es. 10.1016/j.foreco.2024.121234) o link.
+# conferenze: autori, anno, titolo, convegno, luogo, tipo (Orale, Poster, Keynote...), link.
+# Primo elenco ricavato il 24/11/2026 dai profili ORCID del team e da Crossref: da controllare.
+articoli:
+  - autori: "Castellani M.B., Piotti A., Urbinati C., Vendramin G.G., Avanzi C."
+    anno: 2027
+    titolo: "Historical translocations of silver fir in peninsular Italy: Implications for managing the genetic diversity of plantations"
+    rivista: "Forest Ecology and Management"
+    doi: "10.1016/j.foreco.2026.124391"
+  - autori: "Granja L.M., Kutchartt E., Magazzino E., Zieher T., Eskandari R., Crosetto M., et al."
+    anno: 2026
+    titolo: "Earth Sensing in the Dolomites: A Summer School for Capacity Building and Collaboration on Geomatics for Environmental Applications"
+    rivista: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-annals-xi-5-2026-9-2026"
+  - autori: "Tonelli E., Camarero J.J., Carrer M., Colangelo M., Vitali A., Orsetti A., Gennaretti F., Urbinati C."
+    anno: 2026
+    titolo: "European beech resistance to false spring is associated with small-vessel xylem conductivity"
+    rivista: "Agricultural and Forest Meteorology"
+    doi: "10.1016/j.agrformet.2026.111484"
+  - autori: "Menéndez-Miguélez M., Calama R., Madrigal G., Giulioni F., Balestra M., del Río M., Cabo C."
+    anno: 2026
+    titolo: "From point clouds to biomass: comparing QSM algorithms for mature Mediterranean trees with destructive validation"
+    rivista: "Forestry: An International Journal of Forest Research"
+    doi: "10.1093/forestry/cpag090"
+  - autori: "Gerla F., Nepi L., Cățeanu M., Ferroni F., Ee Hung K., Mocny K., et al."
+    anno: 2026
+    titolo: "High-resolution land cover mapping with GeoAI: instance segmentation for land cover analysis"
+    rivista: "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-archives-xlix-b4-2026-133-2026"
+  - autori: "Balestra M., Carloni F., Turchi P., Murolo S., Urbinati C., Belcore E., Vitali A."
+    anno: 2026
+    titolo: "Integrating UAV multispectral and LiDAR data with field assessments to monitor chestnut ink disease severity"
+    rivista: "Remote Sensing Applications: Society and Environment"
+    doi: "10.1016/j.rsase.2026.102258"
+  - autori: "Barbier L.N., Lemay M.A., Boucher É., Rossi S., Gennaretti F."
+    anno: 2026
+    titolo: "Modeling eccentric growth explicitly to investigate intra-annual drivers of xylem cell production using xylogenetic data"
+    rivista: "Forest Ecosystems"
+    doi: "10.1016/j.fecs.2025.100413"
+  - autori: "Xue Y., Zeng X., Liu X., Gennaretti F., Hermoso de Mendoza I., Boucher É., et al."
+    anno: 2026
+    titolo: "Novel GA‐Based Calibration Method for MAIDENiso Ecophysiological Forest Model"
+    rivista: "Journal of Advances in Modeling Earth Systems"
+    doi: "10.1029/2025ms005627"
+  - autori: "Boche M., Lemay M.A., Bouchut S., Bergeron Y., Pappas C., Girona M.M., Buttò V., Gennaretti F."
+    anno: 2026
+    titolo: "Resource utilization strategies and longevity of Thuja occidentalis across contrasting substrates: Insights from morphological and physiological traits"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2026.126484"
+  - autori: "Xue H., Goosse H., Dalaiden Q., Seftigen K., Gennaretti F., Shi F."
+    anno: 2026
+    titolo: "Scandinavian pattern and temperature changes shape European summer droughts over the past millennium"
+    rivista: "Nature Communications"
+    doi: "10.1038/s41467-026-72385-w"
+  - autori: "Pelino G., Vitali A., Tonelli E., Gennaretti F., Urbinati C."
+    anno: 2026
+    titolo: "Structural Traits of Old-Growth Beech Forests in the Central Apennines (Italy)"
+    rivista: "Land"
+    doi: "10.3390/land15071291"
+  - autori: "Balestra M., Chiappini S., Petrovic B., Giusti F., Quattrini G., Pesaresi S., Bonacoscia M., Pierdicca R."
+    anno: 2026
+    titolo: "UAV data fusion approach to assess vegetation recovery dynamics after pipeline construction"
+    rivista: "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-archives-xlix-b1-2026-405-2026"
+  - autori: "Balestra M., Tonelli E., Lizzi L., Pierdicca R., Urbinati C., Vitali A."
+    anno: 2025
+    titolo: "A Digital Replica of a Marteloscope: A Technical and Educational Tool for Smart Forestry Management"
+    rivista: "Forests"
+    doi: "10.3390/f16050820"
+  - autori: "Gery F., Lemay M., DesRochers A., Fenton N., Girona M.M., Ryser P., Poirier V., Gennaretti F."
+    anno: 2025
+    titolo: "A restoration strategy to promote tree establishment in mining‐polluted rocky outcrops using bryophytes"
+    rivista: "Restoration Ecology"
+    doi: "10.1111/rec.70196"
+  - autori: "Gizzi G., Fiorani F., Albi E., Cataldi S., Mazzeschi C., Delvecchio E."
+    anno: 2025
+    titolo: "Depression in Adolescence: Relevance of Serotonin Receptor Polymorphisms"
+    rivista: "Depression and Anxiety"
+    doi: "10.1155/da/5239931"
+  - autori: "Baglioni L., Morresi D., Garbarino M., Urbinati C., Lingua E., Marzano R., Vitali A."
+    anno: 2025
+    titolo: "Forestlines in Italian mountains are shifting upward: detection and monitoring using satellite time series"
+    rivista: "Biogeosciences"
+    doi: "10.5194/bg-22-4349-2025"
+  - autori: "Bicego G., Cocco M., Urbinati C., Anfodillo T."
+    anno: 2025
+    titolo: "Hydraulic path length as a determinant of xylem conduit size at the stem base, regardless of cambial age"
+    rivista: "Tree Physiology"
+    doi: "10.1093/treephys/tpaf127"
+  - autori: "Labrecque‐Foy J., Lemay M., Gennaretti F., Arseneault D., Montoro Girona M."
+    anno: 2025
+    titolo: "Keeping logs on the past: Log driving tells the story of fire regimes in pine forests of eastern Canada"
+    rivista: "Ecosphere"
+    doi: "10.1002/ecs2.70473"
+  - autori: "Voyer D., Demers A., Gennaretti F., Bédard S., Havreljuk F., Grondin P., Achim A."
+    anno: 2025
+    titolo: "Spatial distribution of dark heartwood and wood rot in sugar maple at the northern edge of its range"
+    rivista: "Canadian Journal of Forest Research"
+    doi: "10.1139/cjfr-2024-0136"
+  - autori: "Dejoie E., Lemay M.A., Fenton N.J., DesRochers A., Marion J., Savard M.M., et al."
+    anno: 2025
+    titolo: "Spatiotemporal assessment of lead (Pb) and cadmium (Cd) contamination in urban tree rings near an industrial smelter: high intraspecific variability but limited spatial differentiation"
+    rivista: "Atmospheric Pollution Research"
+    doi: "10.1016/j.apr.2025.102582"
+  - autori: "Thivierge-Lampron J., Girona M.M., Pappas C., Duchesne L., Chavardès R.D., Balducci L., et al."
+    anno: 2025
+    titolo: "Stem Water Storage Dynamics of Three Boreal Tree Species Under Short-Term Drought"
+    rivista: "Forests"
+    doi: "10.3390/f16091448"
+  - autori: "Gambelli D., Dappozzo A., Cameli A., Urbinati C., Vitali A."
+    anno: 2025
+    titolo: "Valuing cultural ecosystem services: an application to forest areas in Marche Region, Italy"
+    rivista: "Aestimum"
+    doi: "10.36253/aestim-16391"
+  - autori: "Tonelli E., Avanzi C., Bitocchi E., Vitali A., Piotti A., Spanu I., Barocci E., Urbinati C."
+    anno: 2025
+    titolo: "Variation in radial growth sensitivity to drought among genetic groups of common yew (Taxus baccata L.) in central Italy"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2025.126360"
+  - autori: "Balestra M., Paolanti M., Pierdicca R."
+    anno: 2025
+    titolo: "WHU-RS19 ABZSL: An Attribute-Based Dataset for Remote Sensing Image Understanding"
+    rivista: "Remote Sensing"
+    doi: "10.3390/rs17142384"
+  - autori: "Balestra M., Cabo C., Murtiyoso A., Vitali A., Alvarez-Taboada F., Cantero-Amiano A., et al."
+    anno: 2024
+    titolo: "Advancing forest inventory: a comparative study of low-cost MLS lidar device with professional laser scanners"
+    rivista: "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-archives-xlviii-2-w8-2024-9-2024"
+  - autori: "Voyer D., Moreau G., Gennaretti F., Bédard S., Havreljuk F., Grondin P., Achim A."
+    anno: 2024
+    titolo: "Age and growth reductions increase the proportion of dark heartwood in sugar maple at the northern limit of its range"
+    rivista: "Forestry: An International Journal of Forest Research"
+    doi: "10.1093/forestry/cpae022"
+  - autori: "Chiappini S., Balestra M., Giulioni F., Marcheggiani E., Malinverni E.S., Pierdicca R."
+    anno: 2024
+    titolo: "Comparing the accuracy of 3D urban olive tree models detected by smartphone using LiDAR sensor, photogrammetry and NeRF: a case study of ’Ascolana Tenera’ in Italy"
+    rivista: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-annals-x-3-2024-61-2024"
+  - autori: "Murgia I., Vitali A., Giadrossich F., Tonelli E., Baglioni L., Cohen D., Schwarz M., Urbinati C."
+    anno: 2024
+    titolo: "Effects of Land Cover Changes on Shallow Landslide Susceptibility Using SlideforMAP Software (Mt. Nerone, Italy)"
+    rivista: "Land"
+    doi: "10.3390/land13101575"
+  - autori: "Avanzi C., Vitali A., Piovani P., Spanu I., Urbinati C., Vendramin G.G., Garbarino M., Piotti A."
+    anno: 2024
+    titolo: "Genetic consequences of landscape features in two rear edge, highly fragmented metapopulations of a mediterranean conifer"
+    rivista: "Landscape Ecology"
+    doi: "10.1007/s10980-024-01887-z"
+  - autori: "Balestra M., Fattorini F., Angeloni R., Nanni L., Mancini A., Papa R., Pierdicca R."
+    anno: 2024
+    titolo: "High definition 3D models of small legume seed: a close up application to support ancient plant genomics"
+    rivista: "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-archives-xlviii-3-2024-17-2024"
+  - autori: "Soubeyrand M., Gennaretti F., Brice M.H., Grondin P., Bergeron Y., Marchand P."
+    anno: 2024
+    titolo: "Increase in young forests, more than climate change may accelerate future colonization of temperate tree species in mixedwood boreal stands"
+    rivista: "Ecological Modelling"
+    doi: "10.1016/j.ecolmodel.2024.110892"
+  - autori: "Soubeyrand M., Marchand P., Duchesne L., Bergeron Y., Gennaretti F."
+    anno: 2024
+    titolo: "Interactions between climate, soil and competition drive tree growth in Quebec forests"
+    rivista: "Forest Ecology and Management"
+    doi: "10.1016/j.foreco.2024.121731"
+  - autori: "Chiappini S., Marcheggiani E., Galli A., Khosravi A., Abdul Mueed Choudhury M., Balestra M., Neri D."
+    anno: 2024
+    titolo: "Olive grove landscape change: A spatial analysis using multitemporal geospatial datasets"
+    rivista: "Ecological Indicators"
+    doi: "10.1016/j.ecolind.2024.112042"
+  - autori: "Murolo S., Vitali A., Carloni F., Landi L., Romanazzi G., Urbinati C."
+    anno: 2024
+    titolo: "Protection from ink disease of Castanea sativa orchards: first steps of INKAS Project, the Rural Development Program for Marche region (central-eastern Italy)"
+    rivista: "Acta Horticulturae"
+    doi: "10.17660/actahortic.2024.1400.16"
+  - autori: "Larose J., Boucher É., de Vernal A., de Mendoza I.H., Gennaretti F., Lavergne A., Andreu-Hayles L., Field R.D."
+    anno: 2024
+    titolo: "Rapid decrease of the Labrador Sea’s influence on black spruce ecosystems with distance inland"
+    rivista: "Communications Earth & Environment"
+    doi: "10.1038/s43247-024-01271-4"
+  - autori: "Balestra M., Pierdicca R., Cesaretti L., Quattrini G., Mancini A., Galli A., et al."
+    anno: 2023
+    titolo: "A COMPARISON OF PRE-PROCESSING APPROACHES FOR REMOTELY SENSED TIME SERIES CLASSIFICATION BASED ON FUNCTIONAL ANALYSIS"
+    rivista: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-annals-x-1-w1-2023-33-2023"
+  - autori: "Soubeyrand M., Gennaretti F., Blarquez O., Bergeron Y., Taylor A.R., D'Orangeville L., Marchand P."
+    anno: 2023
+    titolo: "Competitive interactions under current climate allow temperate tree species to grow and survive in boreal mixedwood forest"
+    rivista: "Ecography"
+    doi: "10.1111/ecog.06525"
+  - autori: "Xue H., Shi F., Gennaretti F., Fu Y.H., He B., Wu X., Guo Z."
+    anno: 2023
+    titolo: "Evidence of advancing spring xylem phenology in Chinese forests under global warming"
+    rivista: "Science China Earth Sciences"
+    doi: "10.1007/s11430-022-1149-x"
+  - autori: "Balestra M., Tonelli E., Vitali A., Urbinati C., Frontoni E., Pierdicca R."
+    anno: 2023
+    titolo: "Geomatic Data Fusion for 3D Tree Modeling: The Case Study of Monumental Chestnut Trees"
+    rivista: "Remote Sensing"
+    doi: "10.3390/rs15082197"
+  - autori: "Chavardès R.D., Balducci L., Bergeron Y., Grondin P., Poirier V., Morin H., Gennaretti F."
+    anno: 2023
+    titolo: "Greater tree species diversity and lower intraspecific competition attenuate impacts from temperature increases and insect epidemics in boreal forests of western Quebec, Canada"
+    rivista: "Canadian Journal of Forest Research"
+    doi: "10.1139/cjfr-2022-0114"
+  - autori: "BREGANT C., CARLONI F., BALESTRA M., LINALDEDDU B.T., MUROLO S."
+    anno: 2023
+    titolo: "Pathogenicity of Botryosphaeriaceae and Phytophthora species associated with Paulownia dieback, canker and root rot in Italy"
+    rivista: "Phytopathologia Mediterranea"
+    doi: "10.36253/phyto-14910"
+  - autori: "Boakye E.A., Bergeron Y., Drobyshev I., Beekharry A., Voyer D., Achim A., et al."
+    anno: 2023
+    titolo: "Recent decline in sugar maple (Acer saccharum Marsh.) growth extends to the northern parts of its distribution range in eastern Canada"
+    rivista: "Forest Ecology and Management"
+    doi: "10.1016/j.foreco.2023.121304"
+  - autori: "Boucher E., Gennaretti F., Porter T., De Mendoza I.H., Solignac S., Lauzon L., et al."
+    anno: 2023
+    titolo: "Scientific Meeting ReportAmeridendro 2022 in Montréal, Canada: Reconstructing Our Community"
+    rivista: "Tree-Ring Research"
+    doi: "10.3959/trr2022-7"
+  - autori: "Caggiu L., Fiorani F., Corradini E., Felice E., Minelli A."
+    anno: 2023
+    titolo: "Spatial Analysis of Risk Exposure of Urban Trees: A Case Study from Bologna (Italy)"
+    rivista: "Urban Science"
+    doi: "10.3390/urbansci7040123"
+  - autori: "Tonelli E., Vitali A., Brega F., Gazol A., Colangelo M., Urbinati C., Camarero J.J."
+    anno: 2023
+    titolo: "Thinning improves growth and resilience after severe droughts in Quercus subpyrenaica coppice forests in the Spanish Pre-Pyrenees"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2022.126042"
+  - autori: "Tonelli E., Vitali A., Malandra F., Camarero J.J., Colangelo M., Nolè A., et al."
+    anno: 2023
+    titolo: "Tree-ring and remote sensing analyses uncover the role played by elevation on European beech sensitivity to late spring frost"
+    rivista: "Science of The Total Environment"
+    doi: "10.1016/j.scitotenv.2022.159239"
+  - autori: "Pierdicca R., Nepi L., Mancini A., Malinverni E.S., Balestra M."
+    anno: 2023
+    titolo: "UAV4TREE: DEEP LEARNING-BASED SYSTEM FOR AUTOMATIC CLASSIFICATION OF TREE SPECIES USING RGB OPTICAL IMAGES OBTAINED BY AN UNMANNED AERIAL VEHICLE"
+    rivista: "ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-annals-x-1-w1-2023-1089-2023"
+  - autori: "Wang F., Arseneault D., Boucher É., Gennaretti F., Lapointe F., Yu S., Francus P."
+    anno: 2023
+    titolo: "Volcanic Imprints in Last-Millennium Land Summer Temperatures in the Circum–North Atlantic Area"
+    rivista: "Journal of Climate"
+    doi: "10.1175/jcli-d-23-0107.1"
+  - autori: "Hermoso de Mendoza I., Boucher E., Gennaretti F., Lavergne A., Field R., Andreu-Hayles L."
+    anno: 2022
+    titolo: "A new snow module improves predictions of the isotope-enabled MAIDENiso forest growth model"
+    rivista: "Geoscientific Model Development"
+    doi: "10.5194/gmd-15-1931-2022"
+  - autori: "Kunz M., Barrios H., Dan M., Dogirama I., Gennaretti F., Guillemette M., et al."
+    anno: 2022
+    titolo: "Bacurú Drõa: Indigenous forest custody as an effective climate change mitigation option. A case study from Darién, Panama"
+    rivista: "Frontiers in Climate"
+    doi: "10.3389/fclim.2022.1047832"
+  - autori: "Malandra F., Vitali A., Morresi D., Garbarino M., Foster D.E., Stephens S.L., Urbinati C."
+    anno: 2022
+    titolo: "Burn Severity Drivers in Italian Large Wildfires"
+    rivista: "Fire"
+    doi: "10.3390/fire5060180"
+  - autori: "Bartolucci A., Marconi M., Magni M., Pierdicca R., Malandra F., Ho T.C., Vitali A., Urbinati C."
+    anno: 2022
+    titolo: "Combining Participatory Mapping and Geospatial Analysis Techniques to Assess Wildfire Risk in Rural North Vietnam"
+    rivista: "Environmental Management"
+    doi: "10.1007/s00267-021-01582-8"
+  - autori: "Chiappini S., Pierdicca R., Malandra F., Tonelli E., Malinverni E.S., Urbinati C., Vitali A."
+    anno: 2022
+    titolo: "Comparing Mobile Laser Scanner and manual measurements for dendrometric variables estimation in a black pine (Pinus nigra Arn.) plantation"
+    rivista: "Computers and Electronics in Agriculture"
+    doi: "10.1016/j.compag.2022.107069"
+  - autori: "Gennaretti F., Carrer M., García-González I., Rossi S., von Arx G."
+    anno: 2022
+    titolo: "Editorial: Quantitative wood anatomy to explore tree responses to global change"
+    rivista: "Frontiers in Plant Science"
+    doi: "10.3389/fpls.2022.998895"
+  - autori: "Balestra M., Chiappini S., Vitali A., Tonelli E., Malandra F., Galli A., et al."
+    anno: 2022
+    titolo: "INTEGRATION OF GEOMATIC TECHNIQUES FOR THE 3D REPRESENTATION AND MONITORING OF A VETERAN CHESTNUT TREE"
+    rivista: "The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences"
+    doi: "10.5194/isprs-archives-xliii-b3-2022-833-2022"
+  - autori: "Büntgen U., Arseneault D., Boucher É., Churakova (Sidorova) O.V., Gennaretti F., Crivellaro A., et al."
+    anno: 2022
+    titolo: "Recognising bias in Common Era temperature reconstructions"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2022.125982"
+  - autori: "Pierdicca R., Balestra M., Micheletti G., Felicetti A., Toscano G."
+    anno: 2022
+    titolo: "Semi-automatic detection and segmentation of wooden pellet size exploiting a deep learning approach"
+    rivista: "Renewable Energy"
+    doi: "10.1016/j.renene.2022.07.109"
+  - autori: "Wang F., Arseneault D., Boucher É., Gennaretti F., Yu S., Zhang T."
+    anno: 2022
+    titolo: "Tropical volcanoes synchronize eastern Canada with Northern Hemisphere millennial temperature variability"
+    rivista: "Nature Communications"
+    doi: "10.1038/s41467-022-32682-6"
+  - autori: "Pappas C., Bélanger N., Bastien-Beaudet G., Couture C., D'Orangeville L., Duchesne L., et al."
+    anno: 2022
+    titolo: "Xylem porosity, sapwood characteristics, and uncertainties in temperate and boreal forest water use"
+    rivista: "Agricultural and Forest Meteorology"
+    doi: "10.1016/j.agrformet.2022.109092"
+  - autori: "Di Stefano F., Chiappini S., Gorreja A., Balestra M., Pierdicca R."
+    anno: 2021
+    titolo: "Mobile 3D scan LiDAR: a literature review"
+    rivista: "Geomatics, Natural Hazards and Risk"
+    doi: "10.1080/19475705.2021.1964617"
+  - autori: "Buttò V., Khare S., Drolet G., Sylvain J., Gennaretti F., Deslauriers A., Morin H., Rossi S."
+    anno: 2021
+    titolo: "Regionwide temporal gradients of carbon allocation allow for shoot growth and latewood formation in boreal black spruce"
+    rivista: "Global Ecology and Biogeography"
+    doi: "10.1111/geb.13340"
+  - autori: "Chavardès R.D., Gennaretti F., Grondin P., Cavard X., Morin H., Bergeron Y."
+    anno: 2021
+    titolo: "Role of Mixed-Species Stands in Attenuating the Vulnerability of Boreal Forests to Climate Change and Insect Epidemics"
+    rivista: "Frontiers in Plant Science"
+    doi: "10.3389/fpls.2021.658880"
+  - autori: "Rezsöhazy J., Gennaretti F., Goosse H., Guiot J."
+    anno: 2021
+    titolo: "Testing the performance of dendroclimatic process-based models at global scale with the PAGES2k tree-ring width database"
+    rivista: "Climate Dynamics"
+    doi: "10.1007/s00382-021-05789-7"
+  - autori: "Büntgen U., Allen K., Anchukaitis K.J., Arseneault D., Boucher É., Bräuning A., et al."
+    anno: 2021
+    titolo: "The influence of decision-making in tree ring-based climate reconstructions"
+    rivista: "Nature Communications"
+    doi: "10.1038/s41467-021-23627-6"
+  - autori: "Field R.D., Andreu-Hayles L., D’arrigo R.D., Oelkers R., Luckman B.H., Morimoto D., et al."
+    anno: 2021
+    titolo: "Tree-ring cellulose δ18O records similar large-scale climate influences as precipitation δ18O in the Northwest Territories of Canada"
+    rivista: "Climate Dynamics"
+    doi: "10.1007/s00382-021-05932-4"
+  - autori: "Rezsöhazy J., Goosse H., Guiot J., Gennaretti F., Boucher E., André F., Jonard M."
+    anno: 2020
+    titolo: "Application and evaluation of the dendroclimatic process-based model MAIDEN during the last century in Canada and Europe"
+    rivista: "Climate of the Past"
+    doi: "10.5194/cp-16-1043-2020"
+  - autori: "Tonelli E., Vitali A., Piermattei A., Urbinati C."
+    anno: 2020
+    titolo: "Are young trees suitable for climate-growth analysis? A trial with Pinus nigra in the central Apennines treeline"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2020.125720"
+  - autori: "Garbarino M., Morresi D., Urbinati C., Malandra F., Motta R., Sibona E.M., Vitali A., Weisberg P.J."
+    anno: 2020
+    titolo: "Contrasting land use legacy effects on forest landscape dynamics in the Italian Alps and the Apennines"
+    rivista: "Landscape Ecology"
+    doi: "10.1007/s10980-020-01013-9"
+  - autori: "Corti G., Urbinati C., Cocco S., Casucci C., Toscano G., Finco A., et al."
+    anno: 2020
+    titolo: "Forests and Soils: Sustainable Products and Ecosystem Services for Human Well-Being"
+    rivista: "The First Outstanding 50 Years of “Università Politecnica delle Marche”"
+    doi: "10.1007/978-3-030-33832-9_39"
+  - autori: "Gennaretti F., Ogée J., Sainte-Marie J., Cuntz M."
+    anno: 2020
+    titolo: "Mining ecophysiological responses of European beech ecosystems to drought"
+    rivista: "Agricultural and Forest Meteorology"
+    doi: "10.1016/j.agrformet.2019.107780"
+  - autori: "Büntgen U., Arseneault D., Boucher É., Churakova (Sidorova) O.V., Gennaretti F., Crivellaro A., et al."
+    anno: 2020
+    titolo: "Prominent role of volcanism in Common Era climate variability and human history"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2020.125757"
+  - autori: "CUROVIC M., SPALEVIC V., SESTRAS P., MOTTA R., DAN C., GARBARINO M., VITALI A., URBINATI C."
+    anno: 2020
+    titolo: "Structural and ecological characteristics of mixed broadleaved old-growth forest(Biogradska Gora - Montenegro)"
+    rivista: "TURKISH JOURNAL OF AGRICULTURE AND FORESTRY"
+    doi: "10.3906/tar-2003-103"
+  - autori: "Morresi D., Vitali A., Urbinati C., Garbarino M."
+    anno: 2019
+    titolo: "Forest Spectral Recovery and Regeneration Dynamics in Stand-Replacing Wildfires of Central Apennines Derived from Landsat Time Series"
+    rivista: "Remote Sensing"
+    doi: "10.3390/rs11030308"
+  - autori: "Malandra F., Vitali A., Urbinati C., Weisberg P.J., Garbarino M."
+    anno: 2019
+    titolo: "Patterns and drivers of forest landscape change in the Apennines range, Italy"
+    rivista: "Regional Environmental Change"
+    doi: "10.1007/s10113-019-01531-6"
+  - autori: "Vitali A., Garbarino M., Camarero J.J., Malandra F., Toromani E., Spalevic V., Čurović M., Urbinati C."
+    anno: 2019
+    titolo: "Pine recolonization dynamics in Mediterranean human-disturbed treeline ecotones"
+    rivista: "Forest Ecology and Management"
+    doi: "10.1016/j.foreco.2018.12.039"
+  - autori: "Marcolin E., Marzano R., Vitali A., Garbarino M., Lingua E."
+    anno: 2019
+    titolo: "Post-Fire Management Impact on Natural Forest Regeneration through Altered Microsite Conditions"
+    rivista: "Forests"
+    doi: "10.3390/f10111014"
+  - autori: "Malandra F., Vitali A., Urbinati C., Garbarino M."
+    anno: 2018
+    titolo: "70 Years of Land Use/Land Cover Changes in the Apennines (Italy): A Meta-Analysis"
+    rivista: "Forests"
+    doi: "10.3390/f9090551"
+  - autori: "Vitali A., Urbinati C., Weisberg P.J., Urza A.K., Garbarino M."
+    anno: 2018
+    titolo: "Effects of natural and anthropogenic drivers on land‐cover change and treeline dynamics in the Apennines (Italy)"
+    rivista: "Journal of Vegetation Science"
+    doi: "10.1111/jvs.12598"
+  - autori: "Sangelantoni L., Russo A., Gennaretti F."
+    anno: 2018
+    titolo: "Impact of bias correction and downscaling through quantile mapping on simulated climate change signal: a case study over Central Italy"
+    rivista: "Theoretical and Applied Climatology"
+    doi: "10.1007/s00704-018-2406-8"
+  - autori: "Büntgen U., Wacker L., Galván J.D., Arnold S., Arseneault D., Baillie M., et al."
+    anno: 2018
+    titolo: "Tree rings reveal globally coherent signature of cosmogenic radiocarbon events in 774 and 993 CE"
+    rivista: "Nature Communications"
+    doi: "10.1038/s41467-018-06036-0"
+  - autori: "Gennaretti F., Boucher E., Nicault A., Gea-Izquierdo G., Arseneault D., Berninger F., et al."
+    anno: 2018
+    titolo: "Underestimation of the Tambora effects in North American taiga ecosystems"
+    rivista: "Environmental Research Letters"
+    doi: "10.1088/1748-9326/aaac0c"
+  - autori: "Gennaretti F., Huard D., Naulier M., Savard M., Bégin C., Arseneault D., Guiot J."
+    anno: 2017
+    titolo: "Bayesian multiproxy temperature reconstruction with black spruce ring widths and stable isotopes from the northern Quebec taiga"
+    rivista: "Climate Dynamics"
+    doi: "10.1007/s00382-017-3565-5"
+  - autori: "Piermattei A., Garbarino M., Urbinati C."
+    anno: 2017
+    titolo: "Corrigendum to “Structural attributes, tree-ring growth and climate sensitivity of Pinus nigra Arn. at high altitude: Common patterns of a possible treeline shift in the central Apennines (Italy)” [Dendrochronologia 32 (3) (2014) 210–219]"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2017.01.008"
+  - autori: "Vitali A., Camarero J.J., Garbarino M., Piermattei A., Urbinati C."
+    anno: 2017
+    titolo: "Deconstructing human-shaped treelines: Microsite topography and distance to seed source control Pinus nigra colonization of treeless areas in the Italian Apennines"
+    rivista: "Forest Ecology and Management"
+    doi: "10.1016/j.foreco.2017.10.004"
+  - autori: "Gennaretti F., Gea-Izquierdo G., Boucher E., Berninger F., Arseneault D., Guiot J."
+    anno: 2017
+    titolo: "Ecophysiological modeling of photosynthesis and carbon allocation to the tree stem in the boreal forest"
+    rivista: "Biogeosciences"
+    doi: "10.5194/bg-14-4851-2017"
+  - autori: "Lavergne A., Gennaretti F., Risi C., Daux V., Boucher E., Savard M.M., et al."
+    anno: 2017
+    titolo: "Modelling tree ring cellulose δ 18 O variations in two temperature-sensitive tree species from North and South America"
+    rivista: "Climate of the Past"
+    doi: "10.5194/cp-13-1515-2017"
+  - autori: "Piermattei A., Urbinati C., Tonelli E., Eggertsson Ó., Levanič T., Kaczka R., et al."
+    anno: 2017
+    titolo: "Potential and limitation of combining terrestrial and marine growth records from Iceland"
+    rivista: "Global and Planetary Change"
+    doi: "10.1016/j.gloplacha.2017.07.010"
+  - autori: "Piotti A., Leonarduzzi C., Postolache D., Bagnoli F., Spanu I., Brousseau L., et al."
+    anno: 2017
+    titolo: "Unexpected scenarios from Mediterranean refugial areas: disentangling complex demographic dynamics along the Apennine distribution of silver fir"
+    rivista: "Journal of Biogeography"
+    doi: "10.1111/jbi.13011"
+  - autori: "Sibona E., Vitali A., Meloni F., Caffo L., Dotta A., Lingua E., Motta R., Garbarino M."
+    anno: 2016
+    titolo: "Direct Measurement of Tree Height Provides Different Results on the Assessment of LiDAR Accuracy"
+    rivista: "Forests"
+    doi: "10.3390/f8010007"
+  - autori: "Piermattei A., Lingua E., Urbinati C., Garbarino M."
+    anno: 2016
+    titolo: "Pinus nigra anthropogenic treelines in the central Apennines show common pattern of tree recruitment"
+    rivista: "European Journal of Forest Research"
+    doi: "10.1007/s10342-016-0999-y"
+  - autori: "Naulier M., Savard M.M., Bégin C., Gennaretti F., Arseneault D., Marion J., Nicault A., Bégin Y."
+    anno: 2015
+    titolo: "A millennial summer temperature reconstruction for northeastern Canada using oxygen isotopes in subfossil trees"
+    rivista: "Climate of the Past"
+    doi: "10.5194/cp-11-1153-2015"
+  - autori: "Autin J., Gennaretti F., Arseneault D., Bégin Y."
+    anno: 2015
+    titolo: "Biases in RCS tree ring chronologies due to sampling heights of trees"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2015.08.002"
+  - autori: "Gazol A., Camarero J.J., Gutiérrez E., Popa I., Andreu‐Hayles L., Motta R., et al."
+    anno: 2015
+    titolo: "Distinct effects of climate warming on populations of silver fir (Abies alba) across Europe"
+    rivista: "Journal of Biogeography"
+    doi: "10.1111/jbi.12512"
+  - autori: "Garbarino M., Weisberg P.J., Bagnara L., Urbinati C."
+    anno: 2015
+    titolo: "Sex-related spatial segregation along environmental gradients in the dioecious conifer, Taxus baccata"
+    rivista: "Forest Ecology and Management"
+    doi: "10.1016/j.foreco.2015.09.009"
+  - autori: "Gennaretti F., Sangelantoni L., Grenier P."
+    anno: 2015
+    titolo: "Toward daily climate scenarios for Canadian Arctic coastal zones with more realistic temperature‐precipitation interdependence"
+    rivista: "Journal of Geophysical Research: Atmospheres"
+    doi: "10.1002/2015jd023890"
+  - autori: "Mazza G., Gallucci V., Manetti M.C., Urbinati C."
+    anno: 2014
+    titolo: "Climate–growth relationships of silver fir (Abies alba Mill.) in marginal populations of Central Italy"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2014.04.004"
+  - autori: "Garbarino M., Lingua E., Marzano R., Urbinati C., Bhuju D., Carrer M."
+    anno: 2014
+    titolo: "Human interactions with forest landscape in the Khumbu valley, Nepal"
+    rivista: "Anthropocene"
+    doi: "10.1016/j.ancene.2014.05.004"
+  - autori: "Gennaretti F., Arseneault D., Bégin Y."
+    anno: 2014
+    titolo: "Millennial disturbance‐driven forest stand dynamics in the Eastern Canadian taiga reconstructed from subfossil logs"
+    rivista: "Journal of Ecology"
+    doi: "10.1111/1365-2745.12315"
+  - autori: "Alma P., Matteo G., Carlo U."
+    anno: 2014
+    titolo: "Structural attributes, tree-ring growth and climate sensitivity of Pinus nigra Arn. at high altitude: common patterns of a possible treeline shift in the central Apennines (Italy)"
+    rivista: "Dendrochronologia"
+    doi: "10.1016/j.dendro.2014.05.002"
+  - autori: "Piermattei A., Crivellaro A., Carrer M., Urbinati C."
+    anno: 2014
+    titolo: "The “blue ring”: anatomy and formation hypothesis of a new tree-ring anomaly in conifers"
+    rivista: "Trees"
+    doi: "10.1007/s00468-014-1107-x"
+  - autori: "Gennaretti F., Arseneault D., Nicault A., Perreault L., Bégin Y."
+    anno: 2014
+    titolo: "Volcano-induced regime shifts in millennial tree-ring chronologies from northeastern North America"
+    rivista: "Proceedings of the National Academy of Sciences"
+    doi: "10.1073/pnas.1324220111"
+  - autori: "ARSENEAULT D., DY B., GENNARETTI F., AUTIN J., BÉGIN Y."
+    anno: 2013
+    titolo: "Developing millennial tree ring chronologies in the fire‐prone North American boreal forest"
+    rivista: "Journal of Quaternary Science"
+    doi: "10.1002/jqs.2612"
+  - autori: "Gennaretti F., Arseneault D., Bégin Y."
+    anno: 2013
+    titolo: "Millennial stocks and fluxes of large woody debris in lakes of the North American taiga"
+    rivista: "Journal of Ecology"
+    doi: "10.1111/1365-2745.12198"
+  - autori: "Babst F., Carrer M., Poulter B., Urbinati C., Neuwirth B., Frank D."
+    anno: 2012
+    titolo: "500 years of regional forest growth variability and links to climatic extreme events in Europe"
+    rivista: "Environmental Research Letters"
+    doi: "10.1088/1748-9326/7/4/045705"
+  - autori: "Piermattei A., Renzaglia F., Urbinati C."
+    anno: 2012
+    titolo: "Recent expansion of Pinus nigra Arn. above the timberline in the central Apennines, Italy"
+    rivista: "Annals of Forest Science"
+    doi: "10.1007/s13595-012-0207-2"
+  - autori: "Babst F., Poulter B., Trouet V., Tan K., Neuwirth B., Wilson R., et al."
+    anno: 2012
+    titolo: "Site- and species-specific responses of forest growth to climate across the European continent"
+    rivista: "Global Ecology and Biogeography"
+    doi: "10.1111/geb.12023"
+  - anno: 2011
+    titolo: "A methodology proposal for land cover change analysis using historical aerial photos"
+    rivista: "Journal of Geography and Regional Planning"
+    link: "http://www.ecoremed.it/publications/B1_C5%20LANDSCAPE/IMPATTI%20SUL%20PAESAGGIO%201.pdf"
+  - autori: "Carrer M., Nola P., Motta R., Urbinati C."
+    anno: 2010
+    titolo: "Contrasting tree‐ring growth to climate responses of Abies alba toward the southern limit of its distribution area"
+    rivista: "Oikos"
+    doi: "10.1111/j.1600-0706.2010.18293.x"
+  - autori: "Corona C., Guiot J., Edouard J.L., Chalié F., Büntgen U., Nola P., Urbinati C."
+    anno: 2010
+    titolo: "Millennium-long summer temperature variations in the European Alps as reconstructed from tree rings"
+    rivista: "Climate of the Past"
+    doi: "10.5194/cp-6-379-2010"
+  - autori: "Büntgen U., Frank D., Liebhold A., Johnson D., Carrer M., Urbinati C., et al."
+    anno: 2009
+    titolo: "Three centuries of insect outbreaks across the European Alps"
+    rivista: "New Phytologist"
+    doi: "10.1111/j.1469-8137.2009.02825.x"
+  - autori: "Nicault A., Alleaume S., Brewer S., Carrer M., Nola P., Guttierez E., et al."
+    anno: 2008
+    titolo: "Mediterranean drought fluctuation during the last 500 years based on tree-ring data"
+    rivista: "Climate Dynamics"
+    doi: "10.1007/s00382-008-0404-8"
+  - autori: "BÜNTGEN U., FRANK D., WILSON R., CARRER M., URBINATI C., ESPER J."
+    anno: 2008
+    titolo: "Testing for tree‐ring divergence in the European Alps"
+    rivista: "Global Change Biology"
+    doi: "10.1111/j.1365-2486.2008.01640.x"
+  - anno: 2007
+    titolo: "Close-to-nature silviculture for conservation and restoration of diurnal raptors forest habitats in the SCI Alpe della Luna-Bocca Trabaria | Selvicoltura naturalistica per la conservazione ed il miglioramento di habitat forestali di rapaci diurni nel SIC Alpe della Luna-Bocca Trabaria (PU)"
+    rivista: "Fitosociologia"
+    link: "http://www.scopus.com/inward/record.url?eid=2-s2.0-77957348298&partnerID=MN8TOARS"
+  - autori: "CARRER M., NOLA P., EDUARD J.L., MOTTA R., URBINATI C."
+    anno: 2007
+    titolo: "Regional variability of climate–growth relationships in Pinus cembra high elevation forests in the Alps"
+    rivista: "Journal of Ecology"
+    doi: "10.1111/j.1365-2745.2007.01281.x"
+  - autori: "Carrer M., Urbinati C."
+    anno: 2006
+    titolo: "Long‐term change in the sensitivity of tree‐ring growth to climate forcing in Larix decidua"
+    rivista: "New Phytologist"
+    doi: "10.1111/j.1469-8137.2006.01703.x"
+  - autori: "Carrer M., Urbinati C."
+    anno: 2004
+    titolo: "AGE-DEPENDENT TREE-RING GROWTH RESPONSES TO CLIMATE IN LARIX DECIDUA AND PINUS CEMBRA"
+    rivista: "Ecology"
+    doi: "10.1890/02-0478"
+  - anno: 2004
+    titolo: "Dating and explanation of Late Glacial - Holocene landslides: A case study from the Southern Alps, Italy"
+    rivista: "Zeitschrift fur Geomorphologie"
+    link: "http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&SrcAuth=ORCID&SrcApp=OrcidOrg&DestLinkType=FullRecord&DestApp=WOS_CPL&KeyUT=WOS:000222576300006&KeyUID=WOS:000222576300006"
+  - autori: "Deslauriers A., Morin H., Urbinati C., Carrer M."
+    anno: 2003
+    titolo: "Daily weather response of balsam fir (Abies balsamea (L.) Mill.) stem radius increment from dendrometer analysis in the boreal forests of Qu–bec (Canada)"
+    rivista: "Trees - Structure and Function"
+    doi: "10.1007/s00468-003-0260-4"
+  - autori: "Carrer M., Urbinati C."
+    anno: 2001
+    titolo: "Spatial analysis of structural and tree‐ring related parameters in a timberline forest in the Italian Alps"
+    rivista: "Journal of Vegetation Science"
+    doi: "10.2307/3236904"
+  - anno: 1998
+    titolo: "Tree water relations and climatic variations at the alpine timberline: Seasonal changes of sap flux and xylem water potential in Larix decidua Miller, Picea abies (L.) Karst. and Pinus cembra L."
+    rivista: "Annales des Sciences Forestieres"
+    link: "http://www.scopus.com/inward/record.url?eid=2-s2.0-0031981633&partnerID=MN8TOARS"
+
+conferenze:
+  - autori: "Vitali A., Murgia I., Malandra F., Prosdocimi M., Tonelli E., Baglioni L., et al."
+    anno: 2023
+    titolo: "Susceptibility assessment of shallow landslides occurrence in the Mt. Nerone district (central Apennines, Italy)"
+    convegno: "EGU General Assembly 2023"
+    luogo: "Vienna"
+    doi: "10.5194/egusphere-egu23-9501"
+  - autori: "Felice E., Vignoli V., Fiorani F., Corradini E., Minelli A."
+    anno: 2022
+    titolo: "Urban trees felling and failures: preliminary results from an investigation on an urban green infrastructure – locating the most sensitive species and defining the causes"
+    convegno: "Acta Horticulturae"
+    doi: "10.17660/actahortic.2022.1345.28"
+  - autori: "Ferrara C., Pierdicca R., Balestra M., Mignani C., Frontoni E., Cavicchi A."
+    anno: 2021
+    titolo: "ICTS AND MOBILE APPLICATIONS FOR PROMOTING TOURISM DESTINATIONS: THE CASE OF SMART MARCA APP."
+    convegno: "Tourism in Southern and Eastern Europe 2021: ToSEE – Smart, Experience, Excellence & ToFEEL – Feelings, Excitement, Education, Leisure"
+    doi: "10.20867/tosee.06.16"

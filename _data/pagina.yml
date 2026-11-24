@@ -1,9 +1,10 @@
 # La home della versione 1.0, sezione per sezione, dall'alto in basso.
 # Si modifica con il Forecolab Editor (o a mano). Ogni sezione ha un "tipo" che ne decide l'aspetto:
-#   apertura, frase, due-colonne, temi, team, elenco-foto, progetti, testo-foto, testo, galleria
+#   apertura, frase, due-colonne, temi, team, elenco-foto, progetti, pubblicazioni, testo-foto, testo, galleria
 # "menu": la parola che compare nel menu in alto (vuota: la sezione non è nel menu).
 # Il team, i temi e i progetti sono negli elenchi condivisi con la prima versione:
-#   _data/team.yml, _data/temi.yml e la cartella _progetti/.
+#   _data/team.yml, _data/temi.yml e la cartella _progetti/. Articoli e convegni sono in _data/pubblicazioni.yml
+#   ("mostra": entrambi, articoli o conferenze, per tenerli in due sezioni separate).
 # "altezza": quanti schermi è alta almeno la sezione (vuoto = 1; 0 = quanto il contenuto); "larghezza": in % della normale.
 # "ex" e "archivio": i testi delle pagine degli ex collaboratori (persone con "ex: true" in _data/team.yml)
 #   e dell'archivio dei progetti conclusi (progetti con "archiviato: true").
@@ -92,6 +93,15 @@ sezioni:
     menu: Progetti
     titolo: Progetti in corso e recenti
     testo: Finanziati da Unione Europea, ministeri, Regione Marche e agenzie canadesi.
+
+  - tipo: pubblicazioni
+    id: pubblicazioni
+    menu: Pubblicazioni
+    titolo: Pubblicazioni
+    testo: Gli articoli su rivista e i contributi ai convegni del laboratorio, dal più recente.
+    mostra: entrambi
+    titolo_articoli: Articoli su rivista
+    titolo_conferenze: Contributi a convegni
 
 ex:
   titolo: Ex collaboratori

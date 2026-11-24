@@ -110,6 +110,36 @@ content:
         type: string
         required: true
 
+  - name: pubblicazioni
+    label: Pubblicazioni
+    type: file
+    path: _data/pubblicazioni.yml
+    fields:
+      - name: articoli
+        label: Articoli su rivista (dal più recente)
+        type: object
+        list: true
+        fields:
+          - { name: autori, label: "Autori (Cognome N., Cognome N.)", type: string }
+          - { name: anno, label: Anno, type: number, required: true }
+          - { name: titolo, label: Titolo, type: string, required: true }
+          - { name: rivista, label: Rivista, type: string }
+          - { name: doi, label: "DOI (solo il codice, 10.xxxx/...)", type: string }
+          - { name: link, label: Link (solo se non c'è il DOI), type: string }
+      - name: conferenze
+        label: Contributi a convegni (dal più recente)
+        type: object
+        list: true
+        fields:
+          - { name: autori, label: "Autori (Cognome N., Cognome N.)", type: string }
+          - { name: anno, label: Anno, type: number, required: true }
+          - { name: titolo, label: Titolo del contributo, type: string, required: true }
+          - { name: convegno, label: Convegno, type: string }
+          - { name: luogo, label: Luogo, type: string }
+          - { name: tipo, label: "Tipo (Orale, Poster, Keynote...)", type: string }
+          - { name: doi, label: DOI (se c'è), type: string }
+          - { name: link, label: Link, type: string }
+
   - name: metodi
     label: Metodi (i capitoli con le foto grandi)
     type: file

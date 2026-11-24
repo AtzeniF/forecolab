@@ -175,6 +175,26 @@
   .proj-others li:hover .rows__name > a { text-decoration: underline; text-underline-offset: .2em; }
   .proj-tag { display: inline-block; margin-left: var(--s-2); padding: 2px 8px; border-radius: 99px; background: var(--surface); font-size: var(--t-label); color: var(--muted); vertical-align: middle; }
   @media (max-width: 1023px) { .proj-facts { margin-top: var(--s-7); } .proj-page .proj-pic { aspect-ratio: 16 / 9; } }
+  /* pubblicazioni: ogni riquadro scorre per conto suo, la pagina resta ferma */
+  .pubs { row-gap: var(--s-7); }
+  .pub-box { display: flex; flex-direction: column; min-width: 0; border-top: 1px solid color-mix(in oklab, var(--ink) 22%, transparent); }
+  .pub-box__head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-3); padding: var(--s-4) 0 var(--s-3); }
+  .pub-box__head h3 { margin: 0; font-size: var(--t-card); font-weight: 500; line-height: 1.3; }
+  .pub-box__n { font-size: var(--t-small); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .pub-scroll { position: relative; max-height: min(34rem, 62svh); overflow-y: auto; overscroll-behavior-y: contain; padding-right: var(--s-3);
+    scrollbar-width: thin; scrollbar-color: color-mix(in oklab, var(--ink) 28%, transparent) transparent;
+    -webkit-mask-image: linear-gradient(#000 calc(100% - 40px), transparent); mask-image: linear-gradient(#000 calc(100% - 40px), transparent); }
+  .pub-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .pub-list { list-style: none; margin: 0; padding: 0 0 40px; }
+  .pub-year { position: sticky; top: 0; z-index: 1; padding: var(--s-2) 0; background: var(--bg); font-size: var(--t-small); font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; border-bottom: 1px solid color-mix(in oklab, var(--ink) 10%, transparent); }
+  .pub { display: grid; gap: var(--s-1); padding: var(--s-3) 0; border-bottom: 1px solid color-mix(in oklab, var(--ink) 10%, transparent); }
+  .pub__title { font-weight: 500; line-height: 1.35; }
+  .pub__title a { color: inherit; text-decoration: none; }
+  .pub__title a:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: .2em; }
+  .pub__who { font-size: var(--t-small); color: var(--muted); line-height: 1.45; }
+  .pub__where { font-size: var(--t-small); line-height: 1.45; font-style: italic; }
+  .pub__where .proj-tag { font-style: normal; margin-left: var(--s-1); }
+  @media (max-width: 639px) { .pub-scroll { max-height: 70svh; overscroll-behavior-y: auto; } }
 </style>
 </head>
 <body>
