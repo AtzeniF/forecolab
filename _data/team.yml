@@ -15,19 +15,19 @@
   tema: Gelate tardive nel faggio, tasso e siccità
   orcid: 0000-0003-0134-0763
 - nome: Mattia Balestra
-  gruppo: Telerilevamento e dottorato
+  gruppo: Postdoc e Dottorandi
   tema: LiDAR da drone e da terra, data fusion geomatica
   orcid: 0000-0002-3741-3621
 - nome: Francesco Atzeni
-  gruppo: Telerilevamento e dottorato
+  gruppo: Postdoc e Dottorandi
   tema: LiDAR e multispettrale per la rinnovazione alla treeline
   orcid: 0009-0007-3946-8080
 - nome: Federico Fiorani
-  gruppo: Telerilevamento e dottorato
+  gruppo: Postdoc e Dottorandi
   tema: Categorie forestali con Sentinel-2 e machine learning
   orcid: 0009-0007-7983-1294
 - nome: Lorena Baglioni
-  gruppo: Telerilevamento e dottorato
+  gruppo: Postdoc e Dottorandi
   tema: Serie Landsat e dinamica del limite del bosco
   orcid: 0009-0003-6183-5538
 - nome: Gianmarco Braconi
@@ -43,3 +43,16 @@
 - nome: Mattia Di Silvestri
   gruppo: Collaboratori
   tema: Clima e anatomia dello xilema nell’abetina di Fonte Abeti (PU)
+- nome: Tommaso Spilli
+  gruppo: Collaboratori
+  tema: Alberi monumentali delle Marche
+  ex: true
+- nome: Francesco Malandra
+  gruppo: Collaboratori
+  ex: true
+  tema: GIS, ecologia del paesaggio, incendi e cambio di uso del suolo
+  orcid: 0000-0001-9317-8446
+- nome: Giovanni Pelino
+  gruppo: Postdoc e Dottorandi
+  tema: 'Boschi vetusti Marche e Abruzzo '
+  orcid: 0009-0002-7837-9754

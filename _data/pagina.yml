@@ -16,7 +16,7 @@ sezioni:
     titolo: Forest Ecology Laboratory
     testo: Anelli degli alberi, droni LiDAR e satelliti per capire come le foreste rispondono a gelate, siccità, vento e incendi.
     pulsante_secondario: Vedi i temi di ricerca
-    link_secondario: "#temi"
+    link_secondario: '#temi'
     foto:
       - foto: /assets/img/lab-faggete.webp
         alt: Faggete in autunno e prati d’altura sul crinale, con una strada che sale verso le antenne della vetta
@@ -30,13 +30,11 @@ sezioni:
         alt: Una valle stretta tra versanti boscati, con il bosco fitto in primo piano
       - foto: /assets/img/lab-crinale.webp
         alt: Un crinale coperto di brina al tramonto, con le antenne sulla cima
-
   - tipo: frase
     id: statement
     menu:
     etichetta: Il laboratorio
     testo: Studiamo il bosco da due lati. Gli anelli del legno raccontano come gli alberi hanno risposto al clima, anno per anno. Droni, LiDAR e satelliti mostrano dove il bosco cresce oggi e dove, al **limite del bosco**, riesce ancora a salire.
-
   - tipo: due-colonne
     id: ricerca
     menu: Ricerca
@@ -52,13 +50,11 @@ sezioni:
         alt: Chiome di un bosco viste dall’alto da un drone, attraversate da una strada
         titolo: Rileviamo il bosco da drone e satellite
         testo: Voli con LiDAR e camere multispettrali, serie Landsat e Sentinel-2 e modelli che portano le misure dal singolo albero alle Alpi e all’Appennino.
-
   - tipo: temi
     id: temi
     menu: Temi
     titolo: Temi di ricerca
     testo: Quattro domande su cui lavoriamo oggi, ognuna con un sito di studio vero.
-
   - tipo: team
     id: team
     menu: Team
@@ -66,11 +62,10 @@ sezioni:
     testo: Dodici persone tra docenti, ricercatori, dottorandi e collaboratori dell’Area Sistemi Forestali.
     gruppi:
       - Docenti e ricercatori
-      - Telerilevamento e dottorato
+      - Postdoc e Dottorandi
       - Collaboratori
     foto: /assets/img/photo-f81721432-960.webp
     alt: Un faggio secolare dai rami larghi in una faggeta dell’Appennino centrale
-
   - tipo: elenco-foto
     id: laboratorio
     menu: Laboratorio
@@ -87,13 +82,11 @@ sezioni:
         descrizione: Nuvole di punti, serie temporali e modelli
     foto: /assets/img/photo-f195387881-1200.webp
     alt: Sezione sottile di legno al microscopio, con vasi e raggi colorati in rosso
-
   - tipo: progetti
     id: progetti
     menu: Progetti
     titolo: Progetti in corso e recenti
     testo: Finanziati da Unione Europea, ministeri, Regione Marche e agenzie canadesi.
-
   - tipo: pubblicazioni
     id: pubblicazioni
     menu: Pubblicazioni
@@ -102,7 +95,6 @@ sezioni:
     mostra: entrambi
     titolo_articoli: Articoli su rivista
     titolo_conferenze: Contributi a convegni
-
 ex:
   titolo: Ex collaboratori
   testo: Chi ha lavorato con il Forecolab negli anni passati, con il tema di cui si è occupato.
