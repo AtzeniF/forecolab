@@ -323,12 +323,14 @@ conferenze:
     titolo: Mapping recruitment patterns at alpine treeline ecotones using UAV-based LiDAR and multispectral data
     convegno: EGU General Assembly 2026
     luogo: Vienna
+    tipo: Poster
     doi: 10.5194/egusphere-egu26-21041
   - autori: Atzeni F., Taccaliti F., Marangon D., Lingua E.
     anno: 2026
     titolo: Fine-scale environmental filtering and seed limitation shape early post-fire regeneration patterns in Mediterranean Pinus halepensis Mill. forests
     convegno: EGU General Assembly 2026
     luogo: Vienna
+    tipo: Abstract
     doi: 10.5194/egusphere-egu26-17839
   - autori: Baglioni L., Vitali A., Choler P., Bayle A., Garbarino M., Morresi D., Gennaretti F., Urbinati C.
     anno: 2026
@@ -336,6 +338,20 @@ conferenze:
     convegno: EGU General Assembly 2026
     luogo: Vienna
     doi: 10.5194/egusphere-egu26-13167
+  - autori: Atzeni F., Taccaliti F., Marangon D., Colle F., Ghiggini F., Lingua E.
+    anno: 2025
+    titolo: Drivers of spatial variability in post-fire forest regeneration
+    convegno: RETURN Spoke VS4 Plenary Meeting
+    luogo: Roma
+    tipo: Poster
+    link: https://hdl.handle.net/11566/363753
+  - autori: Atzeni F., Vitali A., Tonelli E., Baglioni L., Balestra M., Fiorani F., …, Lingua E.
+    anno: 2025
+    titolo: 'Treeline dynamics and seedling survival in the Italian Alps: Insights from the OLYMPUS Project'
+    convegno: International Mountain Conference 2025
+    luogo: Innsbruck
+    tipo: Poster
+    link: https://hdl.handle.net/11566/362696
   - autori: Balestra M., Marselis S., Mokroš M.
     anno: 2024
     titolo: 'Unveiling the Canopy: Insights, Definitions, and Outcomes from a LiDAR Data Fusion Review for Forest Observation'
